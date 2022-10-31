@@ -2728,8 +2728,8 @@ a {
         font-family: 'Lora';
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 25px;
         color: #222222;
     }
     
@@ -2740,7 +2740,7 @@ a {
         height: 39.31px;
         width: 255.39px;
         left: -15px;
-        top: 53px;
+        top: 25px;
         z-index: -1;
     }
 
