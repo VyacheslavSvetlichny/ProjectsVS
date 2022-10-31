@@ -3205,7 +3205,7 @@ a {
 
     .spec {
         position: relative;
-        height: 2100px;
+        height: 1850px;
         margin-top: 150px;
         padding-top: 40px;
         background: #FFEDF6;
@@ -3320,7 +3320,7 @@ a {
       }
 
       .spec-img {
-        width: 95%;
+        width: 70%;
         aspect-ratio: 3/4;
         padding-bottom: 40px;
 
