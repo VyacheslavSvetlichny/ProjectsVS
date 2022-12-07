@@ -136,7 +136,7 @@ body {
 // Header
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
   top: 0;
@@ -187,6 +187,15 @@ body {
     height: 36px;
     border-radius: 100%;
     border: 1px solid #EEEEEE;
+
+    &:hover {
+      @include set_hover($time);
+      background: #5c9930;
+      
+      path {
+        fill: white
+      }
+    }
   
       .social-whatsapp__logo {
         position: absolute;
@@ -206,9 +215,20 @@ body {
     height: 36px;
     border-radius: 100%;
     border: 1px solid #EEEEEE;
+
+      &:hover {
+        @include set_hover($time);
+        background: #5c9930;
+        
+        path {
+          fill: white
+        }
+      }
   
       .social-telegram__logo {
         position: absolute;
+        fill:inherit;
+        stroke:inherit;
         top: 12px;
         left: 11px;
         right: 13px;
@@ -266,6 +286,11 @@ body {
     background:  linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
     border-radius: 100px;
     padding: 8px 26px 11px 26px;
+
+    &:hover {
+      @include set_hover($time);
+      opacity: 75%;
+    }
   }
 }
 
@@ -292,6 +317,11 @@ body {
   }
 }
 
+.menu__link:hover {
+  @include set_hover($time);
+  color: #5c9930;
+}
+
 .menu__checkmark::before {
   position: absolute;
   content: "";
@@ -305,7 +335,6 @@ body {
 // Title
 
 .title {
-  margin-top: 130px;
   background: linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
   padding-top: 78px;
   height: 600px;
@@ -411,6 +440,10 @@ body {
   &__input {
     position: relative;
     flex: 0 0 235px;
+
+    :focus {
+      outline: none !important;
+    }
   }
 
   &__imput::placeholder {
@@ -437,6 +470,11 @@ body {
     border-radius: 6px;
     color: $SecondColorText;
     background: #FF620A;
+
+     &:hover {
+      @include set_hover($time);
+      background: darken(#FF620A, 10);
+    }
   }
   
   .imput__name {
@@ -570,6 +608,12 @@ body {
       position: absolute;
       top: 40px;
       left: 66px;
+
+      &:hover {
+        path {
+          fill: darken(#FF620A, 10);
+        }
+      }
     }
 
     &__top {
@@ -625,6 +669,11 @@ body {
     background: #E2E2E2;
     color: $MainColorText;
     border-radius: 100px;
+
+    &:hover {
+      @include set_hover($time);
+      background: darken(#E2E2E2,20);
+    }
   }
 
   &-slider {
@@ -641,6 +690,16 @@ body {
     left: -90px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+
+
+    &:hover {
+      @include set_hover($time);
+      background: $AdditionalColorText;
+      &::after {
+        @include set_hover($time);
+        color: #ffffff;
+      }
+    }
   }
 
   &-next {
@@ -651,6 +710,15 @@ body {
     right: -110px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+
+    &:hover {
+      @include set_hover($time);
+      background: $AdditionalColorText;
+      &::after {
+        @include set_hover($time);
+        color: #ffffff;
+      }
+    }
   }
 
   &-prev::after,
@@ -836,6 +904,11 @@ body {
     background: #E2E2E2;
     color: $MainColorText;
     border-radius: 100px;
+
+    &:hover {
+      @include set_hover($time);
+      background: darken(#E2E2E2,20);
+    }
   }
 
   &-products {
@@ -863,6 +936,15 @@ body {
     left: -90px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+
+    &:hover {
+      @include set_hover($time);
+      background: $AdditionalColorText;
+      &::after {
+        @include set_hover($time);
+        color: #ffffff;
+      }
+    }
   }
 
   &-next {
@@ -873,6 +955,15 @@ body {
     right: -110px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+
+    &:hover {
+      @include set_hover($time);
+      background: $AdditionalColorText;
+      &::after {
+        @include set_hover($time);
+        color: #ffffff;
+      }
+    }
   }
 
   &-prev::after,
@@ -1044,6 +1135,9 @@ body {
 
     &__input {
       margin-bottom: 10px;
+      :focus {
+        outline: none !important;
+      }
     }
 
     &__imput::placeholder {
@@ -1070,6 +1164,11 @@ body {
       border-radius: 6px;
       color: $SecondColorText;
       background: #FF620A;
+
+      &:hover {
+        @include set_hover($time);
+        background: darken(#FF620A, 10);
+      }
     }
 
     .imput__name {
@@ -1079,6 +1178,7 @@ body {
       border-radius: 6px;
       background: #F7F7F7;
       border-radius: 10px;
+      text-align: center;
     }
       
     .imput__phone {
@@ -1088,6 +1188,7 @@ body {
       border-radius: 6px;
       background: #F7F7F7;
       border-radius: 10px;
+      text-align: center;
     }
 
     &__description {
@@ -1165,6 +1266,11 @@ body {
       font-size: 15px;
       line-height: 19px;
       color: $SecondColorText;
+
+      &:hover {
+        @include set_hover($time);
+        color: #52892B;
+      }
     }
 
     &__item:not(:last-child) {
@@ -1187,6 +1293,11 @@ body {
     font-size: 15px;
     line-height: 19px;
     color: $SecondColorText;
+
+    &:hover {
+      @include set_hover($time);
+      color: #52892B;
+    }
   }
 
   &-catalog__link {
@@ -1196,6 +1307,11 @@ body {
     font-size: 15px;
     line-height: 19px;
     color: #B0B0B0; 
+
+    &:hover {
+      @include set_hover($time);
+      color: #52892B;
+    }
   }
 
   &-phone {
@@ -1243,6 +1359,11 @@ body {
       border-radius: 100%;
       border: 1px solid #464646;
 
+      &:hover {
+        @include set_hover($time);
+        background: #5c9930;
+      }
+
       .footer-whatsapp__logo {
         position: absolute;
         top: 10px;
@@ -1261,6 +1382,11 @@ body {
       height: 36px;
       border-radius: 100%;
       border: 1px solid #464646;
+
+      &:hover {
+        @include set_hover($time);
+        background: #5c9930;
+      }
 
       .footer-telegram__logo {
         position: absolute;
@@ -1281,6 +1407,11 @@ body {
       background:  linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
       border-radius: 100px;
       padding: 8px 26px 11px 26px;
+
+      &:hover {
+        @include set_hover($time);
+        opacity: 75%;
+      }
     }
   }
 
@@ -1314,6 +1445,129 @@ body {
 
       &:not(:last-child) {
         margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.header-contacts {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+}
+
+.contacts {
+  padding: 30px 0 688px;
+
+  &-home {
+    display: inline-block;
+    font-family: $FontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    color: $MainColorText;
+    padding: 4px 12px 5px 11px;
+    background: #F0F0F0;
+    border-radius: 100px;
+  }
+
+  &-heading {
+    font-family: $FontFamily;
+    margin: 10px 0 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: $MainColorText;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__left {
+      flex: 0 0 193px;
+    }
+
+    &__heading {
+      font-family: $FontFamily;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      color: $MainColorText;
+    }
+
+    &__numbers {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      position: relative;
+      flex: 0 0 33%;
+      
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__tel {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      color: $MainColorText;
+    }
+
+    .contacts__phone-mask {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      color: $AdditionalColorText;
+    }
+
+    &__address {
+      display: flex;
+      flex-direction: column;
+
+      .contacts-address__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 0 50%;
+        
+        .contacts-city {
+          font-family: $FontFamily;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 19px;
+          color: $MainColorText;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+
+      .contacts-address__logo {
+        flex: 0 0 auto;
+      }
+
+      .contacts-address__text {
+        flex: 0 0 150px;
       }
     }
   }
