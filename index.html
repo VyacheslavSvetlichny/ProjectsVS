@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ecobag</title> 
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="#" class="header-logo">
+            <img src="images/Header-logo__img.png" alt="Логотип не загружен" class="header-logo__img">
+          </a>
+          <div class="header__content">
+            <div class="header__contacts">
+              <a href="" class="header__address">
+                <span class="header__city">Новосибирск</span> Волочаевская, 204
+              </a>
+              <a href="#" class="header__social-whatsapp">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-whatsapp__logo">
+                  <path d="M8.63794 8.14858C8.87308 7.85314 9.02984 7.70543 9.10822 7.70543C9.1866 7.70543 9.47902 7.83807 9.98548 8.10336C10.498 8.36865 10.7693 8.52842 10.7994 8.58269C10.8115 8.61283 10.8175 8.65805 10.8175 8.71835C10.8175 8.91731 10.7663 9.14643 10.6638 9.40569C10.5673 9.64083 10.3533 9.83979 10.0217 10.0026C9.69005 10.1593 9.38255 10.2377 9.09918 10.2377C8.75551 10.2377 8.18273 10.0508 7.38083 9.677C6.78996 9.40569 6.27747 9.04996 5.84336 8.60982C5.40925 8.16968 4.96309 7.61197 4.50486 6.93669C4.07075 6.29156 3.85671 5.70672 3.86274 5.18217V5.10982C3.88083 4.56115 4.10391 4.08484 4.53199 3.68088C4.6767 3.54823 4.83346 3.48191 5.00228 3.48191C5.03845 3.48191 5.09272 3.48794 5.16507 3.5C5.23742 3.50603 5.2947 3.50904 5.3369 3.50904C5.45146 3.50904 5.52984 3.53015 5.57205 3.57235C5.62028 3.60853 5.66851 3.68992 5.71675 3.81654C5.76498 3.93712 5.86447 4.20241 6.0152 4.6124C6.16593 5.02239 6.2413 5.24849 6.2413 5.2907C6.2413 5.41731 6.13578 5.59216 5.92476 5.81525C5.71976 6.0323 5.61726 6.17097 5.61726 6.23127C5.61726 6.27347 5.63234 6.31869 5.66248 6.36693C5.86748 6.80706 6.17497 7.22007 6.58497 7.60594C6.92261 7.9255 7.37782 8.22997 7.9506 8.51938C8.02295 8.56159 8.08927 8.58269 8.14957 8.58269C8.24 8.58269 8.40279 8.43798 8.63794 8.14858ZM7.2723 12.4987C8.03802 12.4987 8.77058 12.348 9.46998 12.0465C10.1754 11.745 10.7813 11.3411 11.2878 10.8346C11.7943 10.3282 12.1982 9.72524 12.4997 9.02584C12.8012 8.32041 12.9519 7.58484 12.9519 6.81912C12.9519 6.0534 12.8012 5.32084 12.4997 4.62145C12.1982 3.91602 11.7943 3.31008 11.2878 2.80362C10.7813 2.29716 10.1754 1.8932 9.46998 1.59173C8.77058 1.29027 8.03802 1.13953 7.2723 1.13953C6.50658 1.13953 5.77101 1.29027 5.06559 1.59173C4.36619 1.8932 3.76326 2.29716 3.2568 2.80362C2.75034 3.31008 2.34638 3.91602 2.04491 4.62145C1.74345 5.32084 1.59272 6.0534 1.59272 6.81912C1.59272 8.04307 1.95447 9.15246 2.67799 10.1473L1.96352 12.2545L4.15215 11.5581C5.10478 12.1852 6.14483 12.4987 7.2723 12.4987ZM4.62243 0.542636C5.46653 0.180879 6.34982 0 7.2723 0C8.19478 0 9.07506 0.180879 9.91313 0.542636C10.7572 0.904393 11.4838 1.38975 12.0927 1.99871C12.7017 2.60767 13.187 3.3342 13.5488 4.1783C13.9105 5.01637 14.0914 5.89664 14.0914 6.81912C14.0914 7.7416 13.9105 8.62489 13.5488 9.46899C13.187 10.3071 12.7017 11.0306 12.0927 11.6395C11.4838 12.2485 10.7572 12.7339 9.91313 13.0956C9.07506 13.4574 8.19478 13.6382 7.2723 13.6382C6.09659 13.6382 4.99625 13.3549 3.97127 12.7881L0.199951 14L1.42993 10.3372C0.778763 9.264 0.453181 8.0913 0.453181 6.81912C0.453181 5.89664 0.63406 5.01637 0.995817 4.1783C1.35757 3.3342 1.84293 2.60767 2.45189 1.99871C3.06085 1.38975 3.78436 0.904393 4.62243 0.542636Z" fill="#373737"/>
+                </svg>  
+              </a>
+              <a href="#" class="header__social-telegram">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-telegram__logo">
+                  <path d="M10.8288 0.0675229C10.9639 0.165737 11.0191 0.29669 10.9945 0.46038L9.42311 9.88895C9.40265 10.0076 9.33718 10.0997 9.22669 10.1652C9.16939 10.1979 9.10596 10.2143 9.0364 10.2143C8.99138 10.2143 8.94228 10.2041 8.88908 10.1836L6.10838 9.04799L4.62289 10.8588C4.54923 10.9529 4.44897 11 4.32211 11C4.26891 11 4.2239 10.9918 4.18707 10.9754C4.10931 10.9468 4.04588 10.8977 3.99678 10.8281C3.95176 10.7626 3.92925 10.689 3.92925 10.6071V8.46484L9.23283 1.96429L2.67088 7.6423L0.246218 6.64788C0.0948041 6.59059 0.0129588 6.47805 0.000682044 6.31027C-0.00750248 6.14658 0.0579737 6.02586 0.197111 5.9481L10.4114 0.0552458C10.4728 0.0184153 10.5383 0 10.6078 0C10.6897 0 10.7633 0.0225076 10.8288 0.0675229Z" fill="#373737"/>
+                </svg>
+              </a>
+              <a href="tel:+79139104305" class="header__phone-main">
+                <span class="header__phone-mask">+7 (913)</span> 916-38-12
+              </a>
+              <a href="tel:+79139105151" class="header__phone-additional">
+                <span class="header__phone-mask">+7 (913)</span> 925-38-12
+              </a>
+              <a href="#" class="header__question-button">
+                Задать вопрос
+              </a>
+            </div>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    О компании
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="menu__checkmark">Каталог</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    Наши работы
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="title">
+        <div class="title__container container">
+          <h2 class="title__heading-start">Изготовление</h2>
+          <h1 class="title__heading-middle">
+            <span class="title__heading-middle-brown">Бумажных</span><br>мешков и пакетов
+          </h1>
+          <h2 class="title__heading-end">В Новосибирске!</h2>
+          <h3 class="title__heading-description">С нанесением печати для упаковки Вашей продукции <br><span class="heading-description-strong">в сжатые сроки</span></h3>
+          <svg width="844" height="600" viewBox="0 0 844 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="title__background-spiral">
+            <mask id="mask0_2_117" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="844" height="600">
+            <rect width="844" height="600" fill="url(#paint0_linear_2_117)"/>
+            </mask>
+            <g mask="url(#mask0_2_117)">
+            <circle cx="420" cy="287" r="96.5" stroke="white" stroke-opacity="0.7"/>
+            <circle cx="420" cy="287" r="121.5" stroke="white" stroke-opacity="0.6"/>
+            <circle cx="420" cy="287" r="161.5" stroke="white" stroke-opacity="0.5"/>
+            <circle cx="420" cy="287" r="206.5" stroke="white" stroke-opacity="0.4"/>
+            <circle cx="420" cy="287" r="261.5" stroke="white" stroke-opacity="0.3"/>
+            <circle cx="420" cy="287" r="326.5" stroke="white" stroke-opacity="0.2"/>
+            <circle cx="420" cy="287" r="406.5" stroke="white" stroke-opacity="0.1"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear_2_117" x1="1.06115e-05" y1="600.001" x2="849.089" y2="592.711" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#52892B"/>
+            <stop offset="1" stop-color="#60A32F"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            <img src="images/title__background-package.png" alt="Ошибка загрузки картинки" class="title__background-package">
+            <div class="title-form">
+              <div class="title-form__name">Бесплатная консультация</div>
+              <form action="#" class="title-form__body">
+                <div class="title-form__items">
+                  <div class="title-form__input"><input type="text" placeholder="Ваше имя" class="imput__name" required></div>
+                  <div class="title-form__input"><input type="tel" placeholder="Телефон" class="imput__phone" required></div>
+                </div>
+                <input type="submit" value="Оставить заявку" class="imput__button">
+              </form>
+              <label class="title-form__description">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</label>
+            </div>
+        </div>
+      </section>
+      <section class="ecobag">
+        <div class="ecobag-container container">
+          <div class="ecobag-content__text">
+            <h2 class="ecobag-heading">
+              Ecobag
+            </h2>
+            <div class="ecobag-description__start">
+              – мы занимаемся производством бумажных мешков, пакетов <br> и продажей сырья для производства (бумага).
+            </div>
+            <div class="ecobag-description__end">
+              У нас cобственное производство в Новосибирске, соответствующее всем требованиям и гостам. Возможны варианты индивидуального заказа!
+            </div>
+            <div class="ecobag-cards">
+              <div class="ecobag-cards__item">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                  <path d="M21.068 13.3432C20.8641 13.5462 20.7184 13.8361 20.7184 14.039C20.7184 14.2419 20.165 14.4739 19.4951 14.5898C16.7864 15.0247 14.8641 16.3582 13.6408 18.6484C13.0291 19.779 13 20.1269 13 28.7949C13 38.7675 13.0291 38.9414 15.0388 40.9707C17.0777 43 17.165 43 28 43C38.835 43 38.9223 43 40.9612 40.9707C42.9709 38.9414 43 38.7675 43 28.7949C43 20.1269 42.9709 19.779 42.3592 18.6484C41.1359 16.3582 39.2136 15.0247 36.534 14.5898C35.8058 14.4739 35.2816 14.2419 35.2816 14.01C35.2816 12.9084 33.4466 12.7924 33.0971 13.8941C32.9223 14.4159 32.6019 14.4449 28.0291 14.4449H23.1359L22.8155 13.7201C22.466 12.9374 21.6505 12.7634 21.068 13.3432ZM20.6602 18.0686C20.7767 19.4021 21.1553 19.953 21.9126 19.953C22.6117 19.953 23.0485 19.1122 23.0485 17.8077V16.7641H28H32.9515V17.8947C32.9515 18.5614 33.1553 19.2282 33.4175 19.4891C34.3786 20.4458 35.2816 19.808 35.2816 18.1846C35.2816 17.5758 35.3981 16.996 35.5728 16.909C36.0097 16.6481 38.0194 17.2859 38.9223 17.9816C39.7961 18.6484 40.7864 20.5907 40.8155 21.6054V22.2722H28H15.1845V21.6054C15.2136 20.7357 16.1456 18.7644 16.8738 18.1266C17.5728 17.4888 19.4951 16.7641 20.1359 16.851C20.4272 16.88 20.6019 17.3149 20.6602 18.0686ZM40.8155 30.6793C40.8155 37.318 40.699 38.0137 39.1845 39.4342C38.7184 39.8691 37.9612 40.3619 37.5243 40.5069C37 40.7098 33.4175 40.8258 27.9709 40.8258C18.4757 40.8258 18.068 40.7678 16.5825 39.2023C15.301 37.8398 15.1845 37.115 15.1845 30.6503V24.5914H28H40.8155V30.6793Z" fill="#373737"/>
+                  <path d="M20.5437 28.7949C19.5825 30.2444 21.1262 31.8099 22.6116 30.8532C23.4854 30.2734 23.5728 29.2298 22.8155 28.563C22.0291 27.8672 21.0971 27.9542 20.5437 28.7949Z" fill="#639E2D"/>
+                  <path d="M27.0097 28.534C26.3107 29.2297 26.4272 30.3024 27.2718 30.8532C27.9417 31.288 28.0582 31.288 28.7281 30.8532C29.9514 30.0415 29.4272 28.0701 28 28.0701C27.7087 28.0701 27.2427 28.2731 27.0097 28.534Z" fill="#373737"/>
+                  <path d="M33.1553 28.592C32.4563 29.3747 32.5437 30.3024 33.3883 30.8532C34.8738 31.8099 36.4175 30.2444 35.4563 28.7949C34.8738 27.9252 33.8252 27.8382 33.1553 28.592Z" fill="#639E2D"/>
+                  <path d="M20.7185 34.7379C20.0194 35.4336 19.9903 35.8395 20.6019 36.7092C21.1262 37.4919 22.2039 37.5499 22.8447 36.8251C23.5146 36.0714 23.4563 35.1437 22.699 34.6219C21.8252 34.0131 21.4175 34.0421 20.7185 34.7379Z" fill="#639E2D"/>
+                  <path d="M27.1845 34.6219C26.0486 35.4046 26.6311 37.3469 28 37.3469C29.3689 37.3469 29.9515 35.4046 28.8155 34.6219C28.466 34.361 28.0874 34.158 28 34.158C27.9126 34.158 27.534 34.361 27.1845 34.6219Z" fill="#373737"/>
+                  <path d="M33.3009 34.6219C32.1068 35.4336 32.8349 37.3469 34.3495 37.3469C34.9611 37.3469 35.8641 36.3613 35.8641 35.6945C35.8641 35.2017 34.8155 34.158 34.3204 34.158C34.1165 34.158 33.6505 34.361 33.3009 34.6219Z" fill="#373737"/>
+                </svg>                
+                <div class="ecobag-cards__heading">
+                  От 2х суток
+                </div>
+                <div class="ecobag-cards__description">
+                  Срок выполнения заказа
+                </div>
+              </div>
+              <div class="ecobag-cards__item">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                  <path d="M26.4265 13.2495C25.2699 13.5929 16.5014 18.6113 15.5062 19.5093C14.1076 20.8035 14 21.3846 14 28.0142C14 34.9607 14.0807 35.3304 15.9097 36.7831C17.6849 38.2094 25.9962 42.7524 27.1527 42.9373C28.7666 43.2014 30.0845 42.6996 34.6571 40.1111C39.5255 37.3378 41.0855 36.2021 41.5965 34.9871C42.1345 33.7193 42.1345 22.309 41.5965 21.0412C41.0855 19.8262 39.4986 18.6377 34.6033 15.8908C29.3583 12.9325 28.4976 12.6684 26.4265 13.2495ZM33.6888 17.8189C36.0557 19.1659 38.4227 20.645 38.9068 21.0676L39.8213 21.86V28.0142V34.1419L39.0144 34.8814C38.5572 35.304 36.1633 36.7831 33.6888 38.2094C27.8252 41.5638 28.1479 41.5374 22.7954 38.4736C18.0077 35.7531 16.5283 34.7758 16.3132 34.2211C16.2325 33.9834 16.1518 31.1044 16.1518 27.8293V21.8864L16.9587 21.1469C17.7925 20.3809 25.9693 15.6266 27.0183 15.2833C28.1479 14.9135 29.439 15.4153 33.6888 17.8189Z" fill="#373737"/>
+                  <path d="M26.1575 23.0221C24.8665 23.3919 23.2257 25.1352 22.8492 26.4822C22.2306 28.8329 23.172 31.2893 25.2161 32.5307C26.7493 33.4815 29.3583 33.4287 30.8646 32.4515C32.5322 31.3685 33.2315 30.0743 33.2315 28.0141C33.2315 25.9804 32.5322 24.6597 30.9452 23.6296C29.7887 22.8637 27.5831 22.5995 26.1575 23.0221ZM30.2459 25.8747C30.9452 26.5879 31.0797 26.9048 31.0797 28.0141C31.0797 29.1499 30.9452 29.4404 30.1921 30.18C29.439 30.9195 29.1431 31.0516 27.9866 31.0516C26.83 31.0516 26.5341 30.9195 25.781 30.18C25.0279 29.4404 24.8934 29.1499 24.8934 28.0405C24.8934 26.6671 25.5658 25.6106 26.7762 25.0823C27.7714 24.6597 29.3583 25.0031 30.2459 25.8747Z" fill="#639E2D"/>
+                </svg>
+                <div class="ecobag-cards__heading">
+                  От 2 000 000
+                </div>
+                <div class="ecobag-cards__description">
+                  Мешков в месяц, объем&nbsp;производства
+                </div>
+              </div>
+              <div class="ecobag-cards__item">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                  <path d="M24.394 15.8289C18.0828 17.9288 14.3077 19.3847 13.6737 19.9727C12.7803 20.7847 12.7803 22.4366 13.6448 23.3606C14.1059 23.8646 16.1808 24.7046 20.5035 26.2165C26.1807 28.2044 26.8435 28.3724 28.4285 28.2604C30.7916 28.0924 41.4254 24.3686 42.3476 23.3886C43.241 22.4086 43.2121 20.7847 42.29 19.9447C41.5119 19.2447 30.5034 15.2969 28.5726 15.0449C27.5351 14.9049 26.6994 15.0729 24.394 15.8289ZM34.999 19.3847C38.1114 20.5047 40.6762 21.5407 40.6762 21.7087C40.6762 22.1286 29.2354 26.1045 27.9962 26.0765C26.7282 26.0765 15.3163 22.1286 15.3163 21.7087C15.3163 21.4287 17.6217 20.5327 24.8262 18.0408C26.613 17.4248 27.8521 17.1448 28.4285 17.2568C28.9184 17.3408 31.8578 18.2928 34.999 19.3847Z" fill="#373737"/>
+                  <path d="M13.3567 28.3724C12.8956 28.8204 12.9244 29.5764 13.3855 29.9124C13.5584 30.0804 16.5843 31.1723 20.0713 32.4043C25.028 34.1122 26.757 34.5882 27.9962 34.5882C29.2642 34.6162 30.878 34.1682 35.9212 32.4043C39.4082 31.2003 42.4341 30.0804 42.6358 29.9124C42.8375 29.7444 42.9816 29.3804 42.924 29.0724C42.7222 27.7564 42.1459 27.8404 35.2295 30.2203C31.5408 31.4803 28.3132 32.5163 27.9962 32.5163C27.708 32.5163 24.5381 31.5083 20.9358 30.2763C17.3335 29.0444 14.25 28.0364 14.0483 28.0364C13.8466 28.0364 13.5584 28.1764 13.3567 28.3724Z" fill="#639E2D"/>
+                  <path d="M13.299 34.8962C12.4345 35.9042 13.1261 36.2962 20.0137 38.6761C24.5669 40.272 27.1029 41 27.9962 41C28.8896 41 31.1662 40.356 35.2008 38.9561C38.4572 37.8361 41.4543 36.8001 41.8865 36.6601C43.2122 36.2122 43.1834 34.4762 41.8577 34.4762C41.5984 34.4762 38.3996 35.4842 34.7108 36.7441L28.0251 39.0401L21.3105 36.7441C17.6218 35.4842 14.3941 34.4762 14.1348 34.4762C13.8754 34.4762 13.5008 34.6722 13.299 34.8962Z" fill="#373737"/>
+                  </svg>
+                <div class="ecobag-cards__heading">
+                  От 5 видов
+                </div>
+                <div class="ecobag-cards__description">
+                  Бумаги <br> от&nbsp;производителя
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="ecobag-gallery">
+            <div class="ecobag-gallery__top">
+              <a href="">
+                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag-gallery__play">
+                  <g filter="url(#filter0_dd_3_394)">
+                  <circle cx="54" cy="42" r="34" fill="white"/>
+                  </g>
+                  <path d="M66 40.7679C67.3333 41.5378 67.3333 43.4622 66 44.232L48.75 54.1913C47.4167 54.9611 45.75 53.9989 45.75 52.4593L45.75 32.5407C45.75 31.0011 47.4167 30.0389 48.75 30.8087L66 40.7679Z" fill="#FF620A"/>
+                  <defs>
+                  <filter id="filter0_dd_3_394" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="12"/>
+                  <feGaussianBlur stdDeviation="10"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0.04 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_394"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="1"/>
+                  <feGaussianBlur stdDeviation="0.5"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                  <feBlend mode="normal" in2="effect1_dropShadow_3_394" result="effect2_dropShadow_3_394"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3_394" result="shape"/>
+                  </filter>
+                  </defs>
+                </svg>                  
+                <img src="images/ecobag-gallery__top1.png" alt="Ошибка загрузки изображения">
+              </a>
+            </div>
+            <div class="ecobag-gallery__top">
+              <img src="images/ecobag-gallery__top2.png" alt="Ошибка загрузки изображения">
+            </div>
+            <div class="ecobag-gallery__middle">
+              <img src="images/ecobag-gallery__middle.png" alt="Ошибка загрузки изображения">
+            </div>
+            <div class="ecobag-gallery__bottom">
+              <img src="images/ecobag-gallery__bottom1.png" alt="Ошибка загрузки изображения">
+            </div>
+            <div class="ecobag-gallery__bottom">
+              <img src="images/ecobag-gallery___bottom2.png" alt="Ошибка загрузки изображения">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog-container container">
+          <div class="catalog-content__top">
+            <h2 class="catalog-heading">
+              Каталог
+            </h2>
+            <a href="#" class="catalog-all">
+              Все товары
+            </a>
+          </div>
+          <div class="catalog-goods">
+            <a href="#" class="catalog-goods__item">
+              <div class="catalog-goods__left">
+                <div class="catalog-goods__name">Мешки</div>
+                <svg width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="catalog-goods__line">
+                  <rect width="50" height="2" rx="1" fill="#639E2D"/>
+                </svg>
+                <div class="catalog-goods__more">
+                  Подробнее
+                </div>
+              </div>  
+              <div class="catalog-goods__right">
+                <img src="images/catalog-goods__bag.png" alt="Ошибка загрузки изображения" class="catalog-goods__bag">
+              </div>           
+            </a>
+            <a href="#" class="catalog-goods__item">
+              <div class="catalog-goods__left">
+                <div class="catalog-goods__name">Бумага</div>
+                <svg width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="catalog-goods__line">
+                  <rect width="50" height="2" rx="1" fill="#639E2D"/>
+                </svg>
+                <div class="catalog-goods__more">
+                  Подробнее
+                </div>
+              </div>  
+              <div class="catalog-goods__right">
+                <img src="images/catalog-goods__paper.png" alt="Ошибка загрузки изображения" class="catalog-goods__paper">
+              </div>           
+            </a>
+            <a href="#" class="catalog-goods__item">
+              <div class="catalog-goods__left">
+                <div class="catalog-goods__name">Пакеты</div>
+                <svg width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="catalog-goods__line">
+                  <rect width="50" height="2" rx="1" fill="#639E2D"/>
+                </svg>
+                <div class="catalog-goods__more">
+                  Подробнее
+                </div>
+              </div>  
+              <div class="catalog-goods__right">
+                <img src="images/catalog-goods__package.png" alt="Ошибка загрузки изображения" class="catalog-goods__package">
+              </div>           
+            </a>
+          </div>
+          <div class="catalog-slider swiper-container">
+            <div class="catalog-products swiper-wrapper">
+              <a href="#" class="catalog-products__item swiper-slide">
+                <img src="images/catalog-products__img1.png" alt="" class="catalog-products__img">
+                Мешок
+                <div class="catalog-products__capacity">
+                  12л
+                </div>
+                <div class="catalog-products__description">
+                  <div class="catalog-products__feature">
+                    Длина:<br>
+                    Ширина:<br>
+                    Дно:<br>
+                  </div>
+                  <div class="catalog-products__value">
+                    от 900 до 1000 мм<br>
+                    от 495 до 515 мм<br>
+                    100 мм
+                  </div>
+                </div>
+                <div class="catalog-products__layers">
+                  3-4х слойный
+                </div> 
+                <div class="catalog-products__order">
+                  Оформить заказ
+                </div>       
+              </a>
+              <a href="#" class="catalog-products__item swiper-slide">
+                <img src="images/catalog-products__img2.png" alt="" class="catalog-products__img">
+                Мешок "Шпажки"
+                <div class="catalog-products__capacity">
+                  5кг
+                </div>
+                <div class="catalog-products__description">
+                  <div class="catalog-products__feature">
+                    Длина:<br>
+                    Ширина:<br>
+                    Дно:<br>
+                  </div>
+                  <div class="catalog-products__value">
+                    от 900 до 1000 мм<br>
+                    от 495 до 515 мм<br>
+                    100 мм
+                  </div>
+                </div>
+                <div class="catalog-products__layers">3-4х слойный</div> 
+                <div class="catalog-products__order">
+                  Оформить заказ
+                </div>       
+              </a>
+              <a href="#" class="catalog-products__item swiper-slide">
+                <img src="images/catalog-products__img3.png" alt="" class="catalog-products__img">
+                Мешок "Шпажки"
+                <div class="catalog-products__capacity">
+                  3кг / 20л
+                </div>
+                <div class="catalog-products__description">
+                  <div class="catalog-products__feature">
+                    Длина:<br>
+                    Ширина:<br>
+                    Дно:<br>
+                  </div>
+                  <div class="catalog-products__value">
+                    от 900 до 1000 мм<br>
+                    от 495 до 515 мм<br>
+                    100 мм
+                  </div>
+                </div>
+                <div class="catalog-products__layers">
+                  3-4х слойный
+                </div> 
+                <div class="catalog-products__order">
+                  Оформить заказ
+                </div>       
+              </a>
+              <a href="#" class="catalog-products__item swiper-slide">
+                <img src="images/catalog-products__img4.png" alt="" class="catalog-products__img">
+                Мешок "Шпажки"
+                <div class="catalog-products__capacity">
+                  10 кг
+                </div>
+                <div class="catalog-products__description">
+                  <div class="catalog-products__feature">
+                    Длина:<br>
+                    Ширина:<br>
+                    Дно:<br>
+                  </div>
+                  <div class="catalog-products__value">
+                    от 900 до 1000 мм<br>
+                    от 495 до 515 мм<br>
+                    100 мм
+                  </div>
+                </div>
+                <div class="catalog-products__layers">
+                  3-4х слойный
+                </div> 
+                <div class="catalog-products__order">
+                  Оформить заказ
+                </div>       
+              </a>
+              <a href="#" class="catalog-products__item swiper-slide">
+                <img src="images/catalog-products__img5.png" alt="" class="catalog-products__img">
+                Мешок "Шпажки"
+                <div class="catalog-products__capacity">
+                  20 л
+                </div>
+                <div class="catalog-products__description">
+                  <div class="catalog-products__feature">
+                    Длина:<br>
+                    Ширина:<br>
+                    Дно:<br>
+                  </div>
+                  <div class="catalog-products__value">
+                    от 900 до 1000 мм<br>
+                    от 495 до 515 мм<br>
+                    100 мм
+                  </div>
+                </div>
+                <div class="catalog-products__layers">
+                  3-4х слойный
+                </div> 
+                <div class="catalog-products__order">
+                  Оформить заказ
+                </div>       
+              </a>
+            </div>
+          </div>
+          <div class="catalog-prev swiper-button-prev"></div>
+          <div class="catalog-next swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="clients-container container">
+          <div class="clients-content__top">
+            <h2 class="clients-heading">
+              Клиенты и партнеры
+            </h2>
+            <a href="#" class="clients-all">
+              Смотреть все
+            </a>
+          </div>
+          <div class="clients-list">
+            <div class="clients-slider swiper-container">
+              <div class="clients-products swiper-wrapper">
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ООО "Газпром"</div>
+                  <img src="images/clients-item__img1.png" alt="" class="clients-item__img item-first">
+                </a>
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ООО "РЖД"</div>
+                  <img src="images/clients-item__img2.png" alt="" class="clients-item__img item-second">
+                </a>
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ФНС России</div>
+                  <img src="images/clients-item__img3.png" alt="" class="clients-item__img item-third">
+                </a>
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ООО "СГК"</div>
+                  <img src="images/clients-item__img4.png" alt="" class="clients-item__img item-fourth">
+                </a>
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ООО "Газпром"</div>
+                  <img src="images/clients-item__img5.png" alt="" class="clients-item__img item-fifth">
+                </a>
+                <a href="#" class="clients-item swiper-slide">
+                  <div class= "clients-item__name">ООО "СГК"</div>
+                  <img src="images/clients-item__img3.png" alt="" class="clients-item__img item-sixth">
+                </a>              
+              </div>
+            </div>
+            <div class="clients-prev swiper-button-prev"></div>
+            <div class="clients-next swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="request">
+        <div class="request-container container">
+          <div class="request-background">
+            <img src="images/request-background__img.png" alt="Ошибка загрузки изображения" class="request-background__img">
+            <div class="request-content">
+              <div class="request-heading">
+                <div class="request-heading__start">
+                  Все ещё <span class="request-heading__brown">не определились</span> с выбором?
+                </div>
+                <h2 class="request-heading__end">
+                  Оставьте заявку
+                </h2>
+                <div class="request-heading__description">
+                  и мы отправим Вам <span class="request-heading__strong">образцы</span> нашей продукции
+                </div>
+              </div>
+            <div class="request-content__right">
+              <div class="request-form">
+                <div class="request-form__name">
+                  Консультация
+                </div>
+                <div class="request-form__note">
+                  бесплатно
+                </div>
+                <form action="#" class="request-form__body">
+                  <div class="request-form__items">
+                    <div class="request-form__input"><input type="text" placeholder="Ваше имя" class="imput__name" required></div>
+                    <div class="request-form__input"><input type="tel" placeholder="Телефон" class="imput__phone" required></div>
+                    <input type="submit" value="Оставить заявку" class="imput__button">
+                  </div>
+                </form>
+                <label class="request-form__description">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</label>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-container container">
+          <div class="footer-content">
+            <div class="footer-content__items">
+              <a href="#" class="footer-content__logo">
+                <img src="images/footer-logo__img.png" alt="" class="footer-logo__img">
+              </a>
+            </div>
+            <div class="footer-content__items">
+              <a href="#" class="footer-content__address">
+                <span class="footer-content__city">Новосибирск</span> Волочаевская, 204
+              </a>
+            </div>
+            <div class="footer-content__item">
+              <nav class="footer__menu menu">
+                <ul class="footer-menu__list">
+                  <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      О компании
+                    </a>
+                  </li>
+                  <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      Наши работы
+                    </a>
+                  </li>
+                  <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      Доставка и оплата
+                    </a>
+                  </li>
+                  <li class="footer-menu__item">
+                    <a href="#" class="footer-menu__link">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-content__item">
+              <nav class="footer-menu__catalog">
+                <ul class="footer-catalog__content">
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__main">
+                      Каталог
+                    </a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">
+                      Мешки
+                    </a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">
+                      Бумажные пакеты
+                    </a>
+                  </li>
+                  <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">
+                      Бумага
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-content__item footer-right">
+              <div class="footer-phone">
+                <a href="tel:+79139104305" class="footer-phone-main">
+                  <span class="footer-phone-mask">+7 (913)</span> 916-38-12
+                </a>
+                <a href="tel:+79139105151" class="footer-phone-additional">
+                  <span class="footer-phone-mask">+7 (913)</span> 925-38-12
+                </a>
+              </div>
+              <div class="footer-social">
+                <a href="#" class="footer-social-whatsapp">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-whatsapp__logo">
+                    <path d="M8.63794 8.14858C8.87308 7.85314 9.02984 7.70543 9.10822 7.70543C9.1866 7.70543 9.47902 7.83807 9.98548 8.10336C10.498 8.36865 10.7693 8.52842 10.7994 8.58269C10.8115 8.61283 10.8175 8.65805 10.8175 8.71835C10.8175 8.91731 10.7663 9.14643 10.6638 9.40569C10.5673 9.64083 10.3533 9.83979 10.0217 10.0026C9.69005 10.1593 9.38255 10.2377 9.09918 10.2377C8.75551 10.2377 8.18273 10.0508 7.38083 9.677C6.78996 9.40569 6.27747 9.04996 5.84336 8.60982C5.40925 8.16968 4.96309 7.61197 4.50486 6.93669C4.07075 6.29156 3.85671 5.70672 3.86274 5.18217V5.10982C3.88083 4.56115 4.10391 4.08484 4.53199 3.68088C4.6767 3.54823 4.83346 3.48191 5.00228 3.48191C5.03845 3.48191 5.09272 3.48794 5.16507 3.5C5.23742 3.50603 5.2947 3.50904 5.3369 3.50904C5.45146 3.50904 5.52984 3.53015 5.57205 3.57235C5.62028 3.60853 5.66851 3.68992 5.71675 3.81654C5.76498 3.93712 5.86447 4.20241 6.0152 4.6124C6.16593 5.02239 6.2413 5.24849 6.2413 5.2907C6.2413 5.41731 6.13578 5.59216 5.92476 5.81525C5.71976 6.0323 5.61726 6.17097 5.61726 6.23127C5.61726 6.27347 5.63234 6.31869 5.66248 6.36693C5.86748 6.80706 6.17497 7.22007 6.58497 7.60594C6.92261 7.9255 7.37782 8.22997 7.9506 8.51938C8.02295 8.56159 8.08927 8.58269 8.14957 8.58269C8.24 8.58269 8.40279 8.43798 8.63794 8.14858ZM7.2723 12.4987C8.03802 12.4987 8.77058 12.348 9.46998 12.0465C10.1754 11.745 10.7813 11.3411 11.2878 10.8346C11.7943 10.3282 12.1982 9.72524 12.4997 9.02584C12.8012 8.32041 12.9519 7.58484 12.9519 6.81912C12.9519 6.0534 12.8012 5.32084 12.4997 4.62145C12.1982 3.91602 11.7943 3.31008 11.2878 2.80362C10.7813 2.29716 10.1754 1.8932 9.46998 1.59173C8.77058 1.29027 8.03802 1.13953 7.2723 1.13953C6.50658 1.13953 5.77101 1.29027 5.06559 1.59173C4.36619 1.8932 3.76326 2.29716 3.2568 2.80362C2.75034 3.31008 2.34638 3.91602 2.04491 4.62145C1.74345 5.32084 1.59272 6.0534 1.59272 6.81912C1.59272 8.04307 1.95447 9.15246 2.67799 10.1473L1.96352 12.2545L4.15215 11.5581C5.10478 12.1852 6.14483 12.4987 7.2723 12.4987ZM4.62243 0.542636C5.46653 0.180879 6.34982 0 7.2723 0C8.19478 0 9.07506 0.180879 9.91313 0.542636C10.7572 0.904393 11.4838 1.38975 12.0927 1.99871C12.7017 2.60767 13.187 3.3342 13.5488 4.1783C13.9105 5.01637 14.0914 5.89664 14.0914 6.81912C14.0914 7.7416 13.9105 8.62489 13.5488 9.46899C13.187 10.3071 12.7017 11.0306 12.0927 11.6395C11.4838 12.2485 10.7572 12.7339 9.91313 13.0956C9.07506 13.4574 8.19478 13.6382 7.2723 13.6382C6.09659 13.6382 4.99625 13.3549 3.97127 12.7881L0.199951 14L1.42993 10.3372C0.778763 9.264 0.453181 8.0913 0.453181 6.81912C0.453181 5.89664 0.63406 5.01637 0.995817 4.1783C1.35757 3.3342 1.84293 2.60767 2.45189 1.99871C3.06085 1.38975 3.78436 0.904393 4.62243 0.542636Z" fill="white"/>
+                  </svg>                    
+                </a>
+                <a href="#" class="footer-social-telegram">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-telegram__logo">
+                    <path d="M10.8288 0.0675229C10.9639 0.165737 11.0191 0.29669 10.9945 0.46038L9.42311 9.88895C9.40265 10.0076 9.33718 10.0997 9.22669 10.1652C9.16939 10.1979 9.10596 10.2143 9.0364 10.2143C8.99138 10.2143 8.94228 10.2041 8.88908 10.1836L6.10838 9.04799L4.62289 10.8588C4.54923 10.9529 4.44897 11 4.32211 11C4.26891 11 4.2239 10.9918 4.18707 10.9754C4.10931 10.9468 4.04588 10.8977 3.99678 10.8281C3.95176 10.7626 3.92925 10.689 3.92925 10.6071V8.46484L9.23283 1.96429L2.67088 7.6423L0.246218 6.64788C0.0948041 6.59059 0.0129588 6.47805 0.000682044 6.31027C-0.00750248 6.14658 0.0579737 6.02586 0.197111 5.9481L10.4114 0.0552458C10.4728 0.0184153 10.5383 0 10.6078 0C10.6897 0 10.7633 0.0225076 10.8288 0.0675229Z" fill="white"/>
+                  </svg>                    
+                </a>
+                <a href="#" class="footer-social-button">
+                  Задать вопрос
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-copyright">
+              © 2015 — 2022 Экобег. <br>
+              При использовании материалов сайта ссылка обязательна
+            </div>
+            <div class="footer-seolead">
+              <div  class="footer-seolead__item">
+                Разработка сайта:
+              </div>
+              <div class="footer-seolead__item">
+                <img src="images/footer-seolead__logo.png" alt="" class="footer-seolead__logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

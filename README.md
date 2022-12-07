@@ -1,2 +1,0 @@
-# ProjectsVS
-My projects
