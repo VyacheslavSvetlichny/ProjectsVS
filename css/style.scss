@@ -678,8 +678,7 @@ body {
 
   &-slider {
     overflow: hidden;
-    width: 1198px;
-    margin-left: -5px;
+    width: 1199px;
   }
 
   &-prev {
@@ -794,6 +793,7 @@ body {
   &-products__item {
     flex: 0 0 230px;
     width: 230px;
+    margin: 25px 0;
     padding: 20px 20px;
     font-family: $FontFamily;
     font-style: normal;
@@ -804,6 +804,11 @@ body {
     background: $SecondColorText;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
     border-radius: 10px;
+
+    &:hover {
+      @include set_hover($time);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+    }
   }
 
   &-products__img {
@@ -925,7 +930,6 @@ body {
 
   &-slider {
     overflow: hidden;
-    height: 250px;
   }
 
   &-prev {
@@ -973,58 +977,39 @@ body {
   }
 
   &-item {
+    position: relative;
     flex: 0 0 190px;
     width: 190px;
-    height: 190px;
-    position: relative;
     background: $SecondColorText;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
-    border-radius: 10px;
+
+    &:hover .clients-item__img {
+      @include set_hover($time);
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+    }
+
+    &__img {
+      position: relative;
+      height: 190px;
+      border-radius: 10px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+      margin-bottom: 20px;
+    }
+
+    .item-logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include set_center_wh();
+      max-height: 80%;
+      max-width: 80%;
+    }
   }
 
   &-item__name {
-    position: absolute;
-    width: 190px;
+    position: relative;
     text-align: center;
-    bottom: -30px;
-    left: 0;
+    width: 190px;
   }
-
-  &-item__img {
-    position: absolute;
-    top: 56px;
-    left: 34px;
-  }
-}
-
-.item-second {
-  position: absolute;
-  top: 70px;
-  left: 40px;
-}
-
-.item-third {
-  position: absolute;
-  top: 35px;
-  left: 42px;
-}
-
-.item-fourth {
-  position: absolute;
-  top: 71px;
-  left: 35px;
-}
-
-.item-fifth {
-  position: absolute;
-  top: 44px;
-  left: 44px;
-}
-
-.item-sixth {
-  position: absolute;
-  top: 35px;
-  left: 42px;
 }
 
 .request {
@@ -1475,6 +1460,11 @@ body {
     padding: 4px 12px 5px 11px;
     background: #F0F0F0;
     border-radius: 100px;
+
+    &:hover {
+      @include set_hover($time);
+      background: darken(#E2E2E2,20);
+    }
   }
 
   &-heading {
@@ -1494,6 +1484,10 @@ body {
 
     &__left {
       flex: 0 0 193px;
+    }
+
+    &__right {
+      flex: 0 0 850px;
     }
 
     &__heading {
@@ -1570,5 +1564,27 @@ body {
         flex: 0 0 150px;
       }
     }
+  }
+}
+
+#map {
+  height: 514px;
+  width: 850px;
+}
+
+#map > ymaps {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.about {
+  &-heading {
+    margin: 30px 0 750px;
+    font-family: $FontFamily;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: $MainColorText;
   }
 }
