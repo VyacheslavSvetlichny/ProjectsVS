@@ -1449,24 +1449,6 @@ body {
 .contacts {
   padding: 30px 0 688px;
 
-  &-home {
-    display: inline-block;
-    font-family: $FontFamily;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 17px;
-    color: $MainColorText;
-    padding: 4px 12px 5px 11px;
-    background: #F0F0F0;
-    border-radius: 100px;
-
-    &:hover {
-      @include set_hover($time);
-      background: darken(#E2E2E2,20);
-    }
-  }
-
   &-heading {
     font-family: $FontFamily;
     margin: 10px 0 30px;
@@ -1567,6 +1549,24 @@ body {
   }
 }
 
+.home {
+  display: inline-block;
+  font-family: $FontFamily;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: $MainColorText;
+  padding: 4px 12px 5px 11px;
+  background: #F0F0F0;
+  border-radius: 100px;
+
+  &:hover {
+    @include set_hover($time);
+    background: darken(#E2E2E2,20);
+  }
+}
+
 #map {
   height: 514px;
   width: 850px;
@@ -1577,7 +1577,67 @@ body {
   overflow: hidden;
 }
 
+.header-about {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+}
+
 .about {
+  padding: 30px 0 688px;
+
+  &-heading {
+    margin: 30px 0 750px;
+    font-family: $FontFamily;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: $MainColorText;
+  }
+}
+
+.header-delivery {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+}
+
+.delivery {
+  padding: 30px 0 688px;
+
+  &-heading {
+    margin: 30px 0 750px;
+    font-family: $FontFamily;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: $MainColorText;
+  }
+}
+
+.header-stuff {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+}
+
+.stuff {
+  padding: 30px 0 688px;
+  
   &-heading {
     margin: 30px 0 750px;
     font-family: $FontFamily;
