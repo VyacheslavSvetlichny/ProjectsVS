@@ -158,10 +158,10 @@ body {
   height: 36px;
   border-radius: 100%;
   border: 1px solid #EEEEEE;
-}
-.header__social-whatsapp:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.header__social-whatsapp:hover {
   background: #5c9930;
 }
 .header__social-whatsapp:hover path {
@@ -183,10 +183,10 @@ body {
   height: 36px;
   border-radius: 100%;
   border: 1px solid #EEEEEE;
-}
-.header__social-telegram:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.header__social-telegram:hover {
   background: #5c9930;
 }
 .header__social-telegram:hover path {
@@ -247,10 +247,10 @@ body {
   background: linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
   border-radius: 100px;
   padding: 8px 26px 11px 26px;
-}
-.header__question-button:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.header__question-button:hover {
   opacity: 75%;
 }
 
@@ -268,11 +268,11 @@ body {
   font-weight: 500;
   line-height: 20px;
   color: #373737;
+  transition-property: all;
+  transition-duration: 0.7s;
 }
 
 .menu__link:hover {
-  transition-property: all;
-  transition-duration: 0.7s;
   color: #5c9930;
 }
 
@@ -425,10 +425,10 @@ body {
   border-radius: 6px;
   color: #FFFFFF;
   background: #FF620A;
-}
-.title-form .imput__button:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.title-form .imput__button:hover {
   background: #d64d00;
 }
 .title-form .imput__name {
@@ -551,6 +551,8 @@ body {
   position: absolute;
   top: 40px;
   left: 66px;
+  transition-property: all;
+  transition-duration: 0.7s;
 }
 .ecobag-gallery__play:hover path {
   fill: #d64d00;
@@ -602,10 +604,10 @@ body {
   background: #E2E2E2;
   color: #373737;
   border-radius: 100px;
-}
-.catalog-all:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.catalog-all:hover {
   background: #afafaf;
 }
 .catalog-slider {
@@ -620,15 +622,13 @@ body {
   left: -90px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
-}
-.catalog-prev:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.catalog-prev:hover {
   background: #639E2D;
 }
 .catalog-prev:hover::after {
-  transition-property: all;
-  transition-duration: 0.7s;
   color: #ffffff;
 }
 .catalog-next {
@@ -639,15 +639,13 @@ body {
   right: -110px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
-}
-.catalog-next:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.catalog-next:hover {
   background: #639E2D;
 }
 .catalog-next:hover::after {
-  transition-property: all;
-  transition-duration: 0.7s;
   color: #ffffff;
 }
 .catalog-prev::after, .catalog-next::after {
@@ -725,10 +723,10 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
   border-radius: 10px;
-}
-.catalog-products__item:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.catalog-products__item:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
 }
 .catalog-products__img {
@@ -820,10 +818,10 @@ body {
   background: #E2E2E2;
   color: #373737;
   border-radius: 100px;
-}
-.clients-all:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.clients-all:hover {
   background: #afafaf;
 }
 .clients-products {
@@ -847,15 +845,13 @@ body {
   left: -90px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
-}
-.clients-prev:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.clients-prev:hover {
   background: #639E2D;
 }
 .clients-prev:hover::after {
-  transition-property: all;
-  transition-duration: 0.7s;
   color: #ffffff;
 }
 .clients-next {
@@ -866,15 +862,13 @@ body {
   right: -110px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
-}
-.clients-next:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.clients-next:hover {
   background: #639E2D;
 }
 .clients-next:hover::after {
-  transition-property: all;
-  transition-duration: 0.7s;
   color: #ffffff;
 }
 .clients-prev::after, .clients-next::after {
@@ -886,10 +880,10 @@ body {
   flex: 0 0 190px;
   width: 190px;
   background: #FFFFFF;
-}
-.clients-item:hover .clients-item__img {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.clients-item:hover .clients-item__img {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
 }
 .clients-item__img {
@@ -1050,10 +1044,10 @@ body {
   border-radius: 6px;
   color: #FFFFFF;
   background: #FF620A;
-}
-.request-form .imput__button:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.request-form .imput__button:hover {
   background: #d64d00;
 }
 .request-form .imput__name {
@@ -1140,10 +1134,10 @@ body {
   font-size: 15px;
   line-height: 19px;
   color: #FFFFFF;
-}
-.footer-menu__link:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-menu__link:hover {
   color: #52892B;
 }
 .footer-menu__item:not(:last-child) {
@@ -1162,10 +1156,10 @@ body {
   font-size: 15px;
   line-height: 19px;
   color: #FFFFFF;
-}
-.footer-catalog__main:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-catalog__main:hover {
   color: #52892B;
 }
 .footer-catalog__link {
@@ -1175,10 +1169,10 @@ body {
   font-size: 15px;
   line-height: 19px;
   color: #B0B0B0;
-}
-.footer-catalog__link:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-catalog__link:hover {
   color: #52892B;
 }
 .footer-phone {
@@ -1221,10 +1215,10 @@ body {
   height: 36px;
   border-radius: 100%;
   border: 1px solid #464646;
-}
-.footer-social-whatsapp:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-social-whatsapp:hover {
   background: #5c9930;
 }
 .footer-social-whatsapp .footer-whatsapp__logo {
@@ -1243,10 +1237,10 @@ body {
   height: 36px;
   border-radius: 100%;
   border: 1px solid #464646;
-}
-.footer-social-telegram:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-social-telegram:hover {
   background: #5c9930;
 }
 .footer-social-telegram .footer-telegram__logo {
@@ -1266,10 +1260,10 @@ body {
   background: linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
   border-radius: 100px;
   padding: 8px 26px 11px 26px;
-}
-.footer-social-button:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.footer-social-button:hover {
   opacity: 75%;
 }
 .footer-info {
@@ -1409,10 +1403,10 @@ body {
   padding: 4px 12px 5px 11px;
   background: #F0F0F0;
   border-radius: 100px;
-}
-.home:hover {
   transition-property: all;
   transition-duration: 0.7s;
+}
+.home:hover {
   background: #afafaf;
 }
 

@@ -187,9 +187,9 @@ body {
     height: 36px;
     border-radius: 100%;
     border: 1px solid #EEEEEE;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: #5c9930;
       
       path {
@@ -215,9 +215,9 @@ body {
     height: 36px;
     border-radius: 100%;
     border: 1px solid #EEEEEE;
+    @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         background: #5c9930;
         
         path {
@@ -286,9 +286,9 @@ body {
     background:  linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
     border-radius: 100px;
     padding: 8px 26px 11px 26px;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       opacity: 75%;
     }
   }
@@ -314,11 +314,11 @@ body {
     font-weight: 500;
     line-height: 20px;
     color: $MainColorText;
+    @include set_hover($time);
   }
 }
 
 .menu__link:hover {
-  @include set_hover($time);
   color: #5c9930;
 }
 
@@ -470,9 +470,9 @@ body {
     border-radius: 6px;
     color: $SecondColorText;
     background: #FF620A;
+    @include set_hover($time);
 
      &:hover {
-      @include set_hover($time);
       background: darken(#FF620A, 10);
     }
   }
@@ -608,6 +608,7 @@ body {
       position: absolute;
       top: 40px;
       left: 66px;
+      @include set_hover($time);
 
       &:hover {
         path {
@@ -669,9 +670,9 @@ body {
     background: #E2E2E2;
     color: $MainColorText;
     border-radius: 100px;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: darken(#E2E2E2,20);
     }
   }
@@ -689,13 +690,12 @@ body {
     left: -90px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+    @include set_hover($time);
 
 
     &:hover {
-      @include set_hover($time);
       background: $AdditionalColorText;
       &::after {
-        @include set_hover($time);
         color: #ffffff;
       }
     }
@@ -709,12 +709,11 @@ body {
     right: -110px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: $AdditionalColorText;
       &::after {
-        @include set_hover($time);
         color: #ffffff;
       }
     }
@@ -804,9 +803,9 @@ body {
     background: $SecondColorText;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
     border-radius: 10px;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
     }
   }
@@ -909,9 +908,9 @@ body {
     background: #E2E2E2;
     color: $MainColorText;
     border-radius: 100px;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: darken(#E2E2E2,20);
     }
   }
@@ -940,12 +939,11 @@ body {
     left: -90px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: $AdditionalColorText;
       &::after {
-        @include set_hover($time);
         color: #ffffff;
       }
     }
@@ -959,12 +957,11 @@ body {
     right: -110px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       background: $AdditionalColorText;
       &::after {
-        @include set_hover($time);
         color: #ffffff;
       }
     }
@@ -981,9 +978,9 @@ body {
     flex: 0 0 190px;
     width: 190px;
     background: $SecondColorText;
+    @include set_hover($time);
 
     &:hover .clients-item__img {
-      @include set_hover($time);
       box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
     }
 
@@ -1149,9 +1146,9 @@ body {
       border-radius: 6px;
       color: $SecondColorText;
       background: #FF620A;
+      @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         background: darken(#FF620A, 10);
       }
     }
@@ -1251,9 +1248,9 @@ body {
       font-size: 15px;
       line-height: 19px;
       color: $SecondColorText;
+      @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         color: #52892B;
       }
     }
@@ -1278,9 +1275,9 @@ body {
     font-size: 15px;
     line-height: 19px;
     color: $SecondColorText;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       color: #52892B;
     }
   }
@@ -1291,10 +1288,10 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
-    color: #B0B0B0; 
+    color: #B0B0B0;
+    @include set_hover($time);
 
     &:hover {
-      @include set_hover($time);
       color: #52892B;
     }
   }
@@ -1343,9 +1340,9 @@ body {
       height: 36px;
       border-radius: 100%;
       border: 1px solid #464646;
+      @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         background: #5c9930;
       }
 
@@ -1367,9 +1364,9 @@ body {
       height: 36px;
       border-radius: 100%;
       border: 1px solid #464646;
+      @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         background: #5c9930;
       }
 
@@ -1392,9 +1389,9 @@ body {
       background:  linear-gradient(89.65deg, #52892B 0%, #60A32F 100%);
       border-radius: 100px;
       padding: 8px 26px 11px 26px;
+      @include set_hover($time);
 
       &:hover {
-        @include set_hover($time);
         opacity: 75%;
       }
     }
@@ -1560,9 +1557,9 @@ body {
   padding: 4px 12px 5px 11px;
   background: #F0F0F0;
   border-radius: 100px;
+  @include set_hover($time);
 
   &:hover {
-    @include set_hover($time);
     background: darken(#E2E2E2,20);
   }
 }
@@ -1637,7 +1634,7 @@ body {
 
 .stuff {
   padding: 30px 0 688px;
-  
+
   &-heading {
     margin: 30px 0 750px;
     font-family: $FontFamily;
