@@ -608,7 +608,10 @@ body {
       position: absolute;
       top: 40px;
       left: 66px;
-      @include set_hover($time);
+
+      path {
+        @include set_hover($time);
+      }
 
       &:hover {
         path {

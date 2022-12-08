@@ -551,6 +551,8 @@ body {
   position: absolute;
   top: 40px;
   left: 66px;
+}
+.ecobag-gallery__play path {
   transition-property: all;
   transition-duration: 0.7s;
 }
