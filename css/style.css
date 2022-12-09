@@ -1496,7 +1496,7 @@ body {
   padding: 30px 0 688px;
 }
 .about-heading {
-  margin: 30px 0;
+  margin: 10px 0 30px;
   font-family: "Onest", "Sans-serif";
   font-style: normal;
   font-weight: 800;
@@ -1519,7 +1519,7 @@ body {
   padding: 30px 0 147px;
 }
 .delivery-heading {
-  margin: 30px 0;
+  margin: 10px 0 30px;
   font-family: "Onest", "Sans-serif";
   font-style: normal;
   font-weight: 800;
@@ -1675,7 +1675,30 @@ body {
   padding: 30px 0 688px;
 }
 .stuff-heading {
-  margin: 30px 0;
+  margin: 10px 0 30px;
+  font-family: "Onest", "Sans-serif";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 51px;
+  color: #373737;
+}
+
+.header-bags {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
+}
+
+.bags {
+  padding: 30px 0 688px;
+}
+.bags-heading {
+  margin: 10px 0 30px;
   font-family: "Onest", "Sans-serif";
   font-style: normal;
   font-weight: 800;
