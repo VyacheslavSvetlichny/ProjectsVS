@@ -26,3 +26,15 @@ new Swiper('.clients-slider',{
     spaceBetween: 12,
     loop: true,
 });
+
+new Swiper('.special-slider',{
+
+    navigation: {
+        nextEl: '.special-next',
+        prevEl: '.special-prev'
+    },
+
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+});
