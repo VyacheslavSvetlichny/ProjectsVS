@@ -1947,6 +1947,12 @@ body {
   transform: rotate(-180deg);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .calculator {
   padding: 60px 0;
 }
