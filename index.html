@@ -12,8 +12,62 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="mobile-menu">
+        <div class="mobile-menu__top">
+          <a href="" class="mobile-menu__link">
+            <img src="images/Header-logo__img.png" alt="" class="mobile-menu__logo">
+          </a>
+          <div class="mobile-menu__close">Закрыть</div>
+        </div>
+        <ul class="mobile-menu__content">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__section">
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="about.html" class="mobile-menu__section">
+              О компании
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="bags.html" class="mobile-menu__section">
+              Мешки
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="package.html" class="mobile-menu__section">
+              Бумажные пакеты
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="paper.html" class="mobile-menu__section">
+              Бумага
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="stuff.html" class="mobile-menu__section">
+              Наша работа
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="delivery.html" class="mobile-menu__section">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="contacts.html" class="mobile-menu__section">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__shadow"></div>
+      </div>
       <header class="header">
         <div class="container header__container">
+          <div class="menu__burger">
+            <span class="menu-burger__line"></span>
+          </div>
           <a href="#" class="header-logo">
             <img src="images/Header-logo__img.png" alt="Логотип не загружен" class="header-logo__img">
           </a>
@@ -93,12 +147,14 @@
       </header>
       <section class="title">
         <div class="title__container container">
-          <h2 class="title__heading-start">Изготовление</h2>
-          <h1 class="title__heading-middle">
-            <span class="title__heading-middle-brown">Бумажных</span><br>мешков и пакетов
-          </h1>
-          <h2 class="title__heading-end">В Новосибирске!</h2>
-          <h3 class="title__heading-description">С нанесением печати для упаковки Вашей продукции <br><span class="heading-description-strong">в сжатые сроки</span></h3>
+          <div class="title-heading">
+            <h2 class="title__heading-start">Изготовление</h2>
+            <h1 class="title__heading-middle">
+              <span class="title__heading-middle-brown">Бумажных</span><br>мешков и пакетов
+            </h1>
+            <h2 class="title__heading-end">В Новосибирске!</h2>
+            <h3 class="title__heading-description">С нанесением печати для упаковки Вашей продукции <br><span class="heading-description-strong">в сжатые сроки</span></h3>
+          </div>
           <svg width="844" height="600" viewBox="0 0 844 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="title__background-spiral">
             <mask id="mask0_2_117" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="844" height="600">
             <rect width="844" height="600" fill="url(#paint0_linear_2_117)"/>
@@ -135,105 +191,107 @@
       </section>
       <section class="ecobag">
         <div class="ecobag-container container">
-          <div class="ecobag-content__text">
-            <h2 class="ecobag-heading">
-              Ecobag
-            </h2>
-            <div class="ecobag-description__start">
-              – мы занимаемся производством бумажных мешков, пакетов <br> и продажей сырья для производства (бумага).
-            </div>
-            <div class="ecobag-description__end">
-              У нас cобственное производство в Новосибирске, соответствующее всем требованиям и гостам. Возможны варианты индивидуального заказа!
-            </div>
-            <div class="ecobag-cards">
-              <div class="ecobag-cards__item">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
-                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
-                  <path d="M21.068 13.3432C20.8641 13.5462 20.7184 13.8361 20.7184 14.039C20.7184 14.2419 20.165 14.4739 19.4951 14.5898C16.7864 15.0247 14.8641 16.3582 13.6408 18.6484C13.0291 19.779 13 20.1269 13 28.7949C13 38.7675 13.0291 38.9414 15.0388 40.9707C17.0777 43 17.165 43 28 43C38.835 43 38.9223 43 40.9612 40.9707C42.9709 38.9414 43 38.7675 43 28.7949C43 20.1269 42.9709 19.779 42.3592 18.6484C41.1359 16.3582 39.2136 15.0247 36.534 14.5898C35.8058 14.4739 35.2816 14.2419 35.2816 14.01C35.2816 12.9084 33.4466 12.7924 33.0971 13.8941C32.9223 14.4159 32.6019 14.4449 28.0291 14.4449H23.1359L22.8155 13.7201C22.466 12.9374 21.6505 12.7634 21.068 13.3432ZM20.6602 18.0686C20.7767 19.4021 21.1553 19.953 21.9126 19.953C22.6117 19.953 23.0485 19.1122 23.0485 17.8077V16.7641H28H32.9515V17.8947C32.9515 18.5614 33.1553 19.2282 33.4175 19.4891C34.3786 20.4458 35.2816 19.808 35.2816 18.1846C35.2816 17.5758 35.3981 16.996 35.5728 16.909C36.0097 16.6481 38.0194 17.2859 38.9223 17.9816C39.7961 18.6484 40.7864 20.5907 40.8155 21.6054V22.2722H28H15.1845V21.6054C15.2136 20.7357 16.1456 18.7644 16.8738 18.1266C17.5728 17.4888 19.4951 16.7641 20.1359 16.851C20.4272 16.88 20.6019 17.3149 20.6602 18.0686ZM40.8155 30.6793C40.8155 37.318 40.699 38.0137 39.1845 39.4342C38.7184 39.8691 37.9612 40.3619 37.5243 40.5069C37 40.7098 33.4175 40.8258 27.9709 40.8258C18.4757 40.8258 18.068 40.7678 16.5825 39.2023C15.301 37.8398 15.1845 37.115 15.1845 30.6503V24.5914H28H40.8155V30.6793Z" fill="#373737"/>
-                  <path d="M20.5437 28.7949C19.5825 30.2444 21.1262 31.8099 22.6116 30.8532C23.4854 30.2734 23.5728 29.2298 22.8155 28.563C22.0291 27.8672 21.0971 27.9542 20.5437 28.7949Z" fill="#639E2D"/>
-                  <path d="M27.0097 28.534C26.3107 29.2297 26.4272 30.3024 27.2718 30.8532C27.9417 31.288 28.0582 31.288 28.7281 30.8532C29.9514 30.0415 29.4272 28.0701 28 28.0701C27.7087 28.0701 27.2427 28.2731 27.0097 28.534Z" fill="#373737"/>
-                  <path d="M33.1553 28.592C32.4563 29.3747 32.5437 30.3024 33.3883 30.8532C34.8738 31.8099 36.4175 30.2444 35.4563 28.7949C34.8738 27.9252 33.8252 27.8382 33.1553 28.592Z" fill="#639E2D"/>
-                  <path d="M20.7185 34.7379C20.0194 35.4336 19.9903 35.8395 20.6019 36.7092C21.1262 37.4919 22.2039 37.5499 22.8447 36.8251C23.5146 36.0714 23.4563 35.1437 22.699 34.6219C21.8252 34.0131 21.4175 34.0421 20.7185 34.7379Z" fill="#639E2D"/>
-                  <path d="M27.1845 34.6219C26.0486 35.4046 26.6311 37.3469 28 37.3469C29.3689 37.3469 29.9515 35.4046 28.8155 34.6219C28.466 34.361 28.0874 34.158 28 34.158C27.9126 34.158 27.534 34.361 27.1845 34.6219Z" fill="#373737"/>
-                  <path d="M33.3009 34.6219C32.1068 35.4336 32.8349 37.3469 34.3495 37.3469C34.9611 37.3469 35.8641 36.3613 35.8641 35.6945C35.8641 35.2017 34.8155 34.158 34.3204 34.158C34.1165 34.158 33.6505 34.361 33.3009 34.6219Z" fill="#373737"/>
-                </svg>                
-                <div class="ecobag-cards__heading">
-                  От 2х суток
-                </div>
-                <div class="ecobag-cards__description">
-                  Срок выполнения заказа
-                </div>
+          <div class="ecobag-content">
+            <div class="ecobag-content__text">
+              <h2 class="ecobag-heading">
+                Ecobag
+              </h2>
+              <div class="ecobag-description__start">
+                – мы занимаемся производством бумажных мешков, пакетов <br> и продажей сырья для производства (бумага).
               </div>
-              <div class="ecobag-cards__item">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
-                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
-                  <path d="M26.4265 13.2495C25.2699 13.5929 16.5014 18.6113 15.5062 19.5093C14.1076 20.8035 14 21.3846 14 28.0142C14 34.9607 14.0807 35.3304 15.9097 36.7831C17.6849 38.2094 25.9962 42.7524 27.1527 42.9373C28.7666 43.2014 30.0845 42.6996 34.6571 40.1111C39.5255 37.3378 41.0855 36.2021 41.5965 34.9871C42.1345 33.7193 42.1345 22.309 41.5965 21.0412C41.0855 19.8262 39.4986 18.6377 34.6033 15.8908C29.3583 12.9325 28.4976 12.6684 26.4265 13.2495ZM33.6888 17.8189C36.0557 19.1659 38.4227 20.645 38.9068 21.0676L39.8213 21.86V28.0142V34.1419L39.0144 34.8814C38.5572 35.304 36.1633 36.7831 33.6888 38.2094C27.8252 41.5638 28.1479 41.5374 22.7954 38.4736C18.0077 35.7531 16.5283 34.7758 16.3132 34.2211C16.2325 33.9834 16.1518 31.1044 16.1518 27.8293V21.8864L16.9587 21.1469C17.7925 20.3809 25.9693 15.6266 27.0183 15.2833C28.1479 14.9135 29.439 15.4153 33.6888 17.8189Z" fill="#373737"/>
-                  <path d="M26.1575 23.0221C24.8665 23.3919 23.2257 25.1352 22.8492 26.4822C22.2306 28.8329 23.172 31.2893 25.2161 32.5307C26.7493 33.4815 29.3583 33.4287 30.8646 32.4515C32.5322 31.3685 33.2315 30.0743 33.2315 28.0141C33.2315 25.9804 32.5322 24.6597 30.9452 23.6296C29.7887 22.8637 27.5831 22.5995 26.1575 23.0221ZM30.2459 25.8747C30.9452 26.5879 31.0797 26.9048 31.0797 28.0141C31.0797 29.1499 30.9452 29.4404 30.1921 30.18C29.439 30.9195 29.1431 31.0516 27.9866 31.0516C26.83 31.0516 26.5341 30.9195 25.781 30.18C25.0279 29.4404 24.8934 29.1499 24.8934 28.0405C24.8934 26.6671 25.5658 25.6106 26.7762 25.0823C27.7714 24.6597 29.3583 25.0031 30.2459 25.8747Z" fill="#639E2D"/>
-                </svg>
-                <div class="ecobag-cards__heading">
-                  От 2 000 000
-                </div>
-                <div class="ecobag-cards__description">
-                  Мешков в месяц, объем&nbsp;производства
-                </div>
+              <div class="ecobag-description__end">
+                У нас cобственное производство в Новосибирске, соответствующее всем требованиям и гостам. Возможны варианты индивидуального заказа!
               </div>
-              <div class="ecobag-cards__item">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
-                  <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
-                  <path d="M24.394 15.8289C18.0828 17.9288 14.3077 19.3847 13.6737 19.9727C12.7803 20.7847 12.7803 22.4366 13.6448 23.3606C14.1059 23.8646 16.1808 24.7046 20.5035 26.2165C26.1807 28.2044 26.8435 28.3724 28.4285 28.2604C30.7916 28.0924 41.4254 24.3686 42.3476 23.3886C43.241 22.4086 43.2121 20.7847 42.29 19.9447C41.5119 19.2447 30.5034 15.2969 28.5726 15.0449C27.5351 14.9049 26.6994 15.0729 24.394 15.8289ZM34.999 19.3847C38.1114 20.5047 40.6762 21.5407 40.6762 21.7087C40.6762 22.1286 29.2354 26.1045 27.9962 26.0765C26.7282 26.0765 15.3163 22.1286 15.3163 21.7087C15.3163 21.4287 17.6217 20.5327 24.8262 18.0408C26.613 17.4248 27.8521 17.1448 28.4285 17.2568C28.9184 17.3408 31.8578 18.2928 34.999 19.3847Z" fill="#373737"/>
-                  <path d="M13.3567 28.3724C12.8956 28.8204 12.9244 29.5764 13.3855 29.9124C13.5584 30.0804 16.5843 31.1723 20.0713 32.4043C25.028 34.1122 26.757 34.5882 27.9962 34.5882C29.2642 34.6162 30.878 34.1682 35.9212 32.4043C39.4082 31.2003 42.4341 30.0804 42.6358 29.9124C42.8375 29.7444 42.9816 29.3804 42.924 29.0724C42.7222 27.7564 42.1459 27.8404 35.2295 30.2203C31.5408 31.4803 28.3132 32.5163 27.9962 32.5163C27.708 32.5163 24.5381 31.5083 20.9358 30.2763C17.3335 29.0444 14.25 28.0364 14.0483 28.0364C13.8466 28.0364 13.5584 28.1764 13.3567 28.3724Z" fill="#639E2D"/>
-                  <path d="M13.299 34.8962C12.4345 35.9042 13.1261 36.2962 20.0137 38.6761C24.5669 40.272 27.1029 41 27.9962 41C28.8896 41 31.1662 40.356 35.2008 38.9561C38.4572 37.8361 41.4543 36.8001 41.8865 36.6601C43.2122 36.2122 43.1834 34.4762 41.8577 34.4762C41.5984 34.4762 38.3996 35.4842 34.7108 36.7441L28.0251 39.0401L21.3105 36.7441C17.6218 35.4842 14.3941 34.4762 14.1348 34.4762C13.8754 34.4762 13.5008 34.6722 13.299 34.8962Z" fill="#373737"/>
+              <div class="ecobag-cards">
+                <div class="ecobag-cards__item">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                    <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                    <path d="M21.068 13.3432C20.8641 13.5462 20.7184 13.8361 20.7184 14.039C20.7184 14.2419 20.165 14.4739 19.4951 14.5898C16.7864 15.0247 14.8641 16.3582 13.6408 18.6484C13.0291 19.779 13 20.1269 13 28.7949C13 38.7675 13.0291 38.9414 15.0388 40.9707C17.0777 43 17.165 43 28 43C38.835 43 38.9223 43 40.9612 40.9707C42.9709 38.9414 43 38.7675 43 28.7949C43 20.1269 42.9709 19.779 42.3592 18.6484C41.1359 16.3582 39.2136 15.0247 36.534 14.5898C35.8058 14.4739 35.2816 14.2419 35.2816 14.01C35.2816 12.9084 33.4466 12.7924 33.0971 13.8941C32.9223 14.4159 32.6019 14.4449 28.0291 14.4449H23.1359L22.8155 13.7201C22.466 12.9374 21.6505 12.7634 21.068 13.3432ZM20.6602 18.0686C20.7767 19.4021 21.1553 19.953 21.9126 19.953C22.6117 19.953 23.0485 19.1122 23.0485 17.8077V16.7641H28H32.9515V17.8947C32.9515 18.5614 33.1553 19.2282 33.4175 19.4891C34.3786 20.4458 35.2816 19.808 35.2816 18.1846C35.2816 17.5758 35.3981 16.996 35.5728 16.909C36.0097 16.6481 38.0194 17.2859 38.9223 17.9816C39.7961 18.6484 40.7864 20.5907 40.8155 21.6054V22.2722H28H15.1845V21.6054C15.2136 20.7357 16.1456 18.7644 16.8738 18.1266C17.5728 17.4888 19.4951 16.7641 20.1359 16.851C20.4272 16.88 20.6019 17.3149 20.6602 18.0686ZM40.8155 30.6793C40.8155 37.318 40.699 38.0137 39.1845 39.4342C38.7184 39.8691 37.9612 40.3619 37.5243 40.5069C37 40.7098 33.4175 40.8258 27.9709 40.8258C18.4757 40.8258 18.068 40.7678 16.5825 39.2023C15.301 37.8398 15.1845 37.115 15.1845 30.6503V24.5914H28H40.8155V30.6793Z" fill="#373737"/>
+                    <path d="M20.5437 28.7949C19.5825 30.2444 21.1262 31.8099 22.6116 30.8532C23.4854 30.2734 23.5728 29.2298 22.8155 28.563C22.0291 27.8672 21.0971 27.9542 20.5437 28.7949Z" fill="#639E2D"/>
+                    <path d="M27.0097 28.534C26.3107 29.2297 26.4272 30.3024 27.2718 30.8532C27.9417 31.288 28.0582 31.288 28.7281 30.8532C29.9514 30.0415 29.4272 28.0701 28 28.0701C27.7087 28.0701 27.2427 28.2731 27.0097 28.534Z" fill="#373737"/>
+                    <path d="M33.1553 28.592C32.4563 29.3747 32.5437 30.3024 33.3883 30.8532C34.8738 31.8099 36.4175 30.2444 35.4563 28.7949C34.8738 27.9252 33.8252 27.8382 33.1553 28.592Z" fill="#639E2D"/>
+                    <path d="M20.7185 34.7379C20.0194 35.4336 19.9903 35.8395 20.6019 36.7092C21.1262 37.4919 22.2039 37.5499 22.8447 36.8251C23.5146 36.0714 23.4563 35.1437 22.699 34.6219C21.8252 34.0131 21.4175 34.0421 20.7185 34.7379Z" fill="#639E2D"/>
+                    <path d="M27.1845 34.6219C26.0486 35.4046 26.6311 37.3469 28 37.3469C29.3689 37.3469 29.9515 35.4046 28.8155 34.6219C28.466 34.361 28.0874 34.158 28 34.158C27.9126 34.158 27.534 34.361 27.1845 34.6219Z" fill="#373737"/>
+                    <path d="M33.3009 34.6219C32.1068 35.4336 32.8349 37.3469 34.3495 37.3469C34.9611 37.3469 35.8641 36.3613 35.8641 35.6945C35.8641 35.2017 34.8155 34.158 34.3204 34.158C34.1165 34.158 33.6505 34.361 33.3009 34.6219Z" fill="#373737"/>
+                  </svg>                
+                  <div class="ecobag-cards__heading">
+                    От 2х суток
+                  </div>
+                  <div class="ecobag-cards__description">
+                    Срок выполнения заказа
+                  </div>
+                </div>
+                <div class="ecobag-cards__item">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                    <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                    <path d="M26.4265 13.2495C25.2699 13.5929 16.5014 18.6113 15.5062 19.5093C14.1076 20.8035 14 21.3846 14 28.0142C14 34.9607 14.0807 35.3304 15.9097 36.7831C17.6849 38.2094 25.9962 42.7524 27.1527 42.9373C28.7666 43.2014 30.0845 42.6996 34.6571 40.1111C39.5255 37.3378 41.0855 36.2021 41.5965 34.9871C42.1345 33.7193 42.1345 22.309 41.5965 21.0412C41.0855 19.8262 39.4986 18.6377 34.6033 15.8908C29.3583 12.9325 28.4976 12.6684 26.4265 13.2495ZM33.6888 17.8189C36.0557 19.1659 38.4227 20.645 38.9068 21.0676L39.8213 21.86V28.0142V34.1419L39.0144 34.8814C38.5572 35.304 36.1633 36.7831 33.6888 38.2094C27.8252 41.5638 28.1479 41.5374 22.7954 38.4736C18.0077 35.7531 16.5283 34.7758 16.3132 34.2211C16.2325 33.9834 16.1518 31.1044 16.1518 27.8293V21.8864L16.9587 21.1469C17.7925 20.3809 25.9693 15.6266 27.0183 15.2833C28.1479 14.9135 29.439 15.4153 33.6888 17.8189Z" fill="#373737"/>
+                    <path d="M26.1575 23.0221C24.8665 23.3919 23.2257 25.1352 22.8492 26.4822C22.2306 28.8329 23.172 31.2893 25.2161 32.5307C26.7493 33.4815 29.3583 33.4287 30.8646 32.4515C32.5322 31.3685 33.2315 30.0743 33.2315 28.0141C33.2315 25.9804 32.5322 24.6597 30.9452 23.6296C29.7887 22.8637 27.5831 22.5995 26.1575 23.0221ZM30.2459 25.8747C30.9452 26.5879 31.0797 26.9048 31.0797 28.0141C31.0797 29.1499 30.9452 29.4404 30.1921 30.18C29.439 30.9195 29.1431 31.0516 27.9866 31.0516C26.83 31.0516 26.5341 30.9195 25.781 30.18C25.0279 29.4404 24.8934 29.1499 24.8934 28.0405C24.8934 26.6671 25.5658 25.6106 26.7762 25.0823C27.7714 24.6597 29.3583 25.0031 30.2459 25.8747Z" fill="#639E2D"/>
                   </svg>
-                <div class="ecobag-cards__heading">
-                  От 5 видов
+                  <div class="ecobag-cards__heading">
+                    От 2 000 000
+                  </div>
+                  <div class="ecobag-cards__description">
+                    Мешков в месяц, объем&nbsp;производства
+                  </div>
                 </div>
-                <div class="ecobag-cards__description">
-                  Бумаги <br> от&nbsp;производителя
+                <div class="ecobag-cards__item">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag__logo">
+                    <circle cx="28" cy="28" r="28" fill="#F5F5F5"/>
+                    <path d="M24.394 15.8289C18.0828 17.9288 14.3077 19.3847 13.6737 19.9727C12.7803 20.7847 12.7803 22.4366 13.6448 23.3606C14.1059 23.8646 16.1808 24.7046 20.5035 26.2165C26.1807 28.2044 26.8435 28.3724 28.4285 28.2604C30.7916 28.0924 41.4254 24.3686 42.3476 23.3886C43.241 22.4086 43.2121 20.7847 42.29 19.9447C41.5119 19.2447 30.5034 15.2969 28.5726 15.0449C27.5351 14.9049 26.6994 15.0729 24.394 15.8289ZM34.999 19.3847C38.1114 20.5047 40.6762 21.5407 40.6762 21.7087C40.6762 22.1286 29.2354 26.1045 27.9962 26.0765C26.7282 26.0765 15.3163 22.1286 15.3163 21.7087C15.3163 21.4287 17.6217 20.5327 24.8262 18.0408C26.613 17.4248 27.8521 17.1448 28.4285 17.2568C28.9184 17.3408 31.8578 18.2928 34.999 19.3847Z" fill="#373737"/>
+                    <path d="M13.3567 28.3724C12.8956 28.8204 12.9244 29.5764 13.3855 29.9124C13.5584 30.0804 16.5843 31.1723 20.0713 32.4043C25.028 34.1122 26.757 34.5882 27.9962 34.5882C29.2642 34.6162 30.878 34.1682 35.9212 32.4043C39.4082 31.2003 42.4341 30.0804 42.6358 29.9124C42.8375 29.7444 42.9816 29.3804 42.924 29.0724C42.7222 27.7564 42.1459 27.8404 35.2295 30.2203C31.5408 31.4803 28.3132 32.5163 27.9962 32.5163C27.708 32.5163 24.5381 31.5083 20.9358 30.2763C17.3335 29.0444 14.25 28.0364 14.0483 28.0364C13.8466 28.0364 13.5584 28.1764 13.3567 28.3724Z" fill="#639E2D"/>
+                    <path d="M13.299 34.8962C12.4345 35.9042 13.1261 36.2962 20.0137 38.6761C24.5669 40.272 27.1029 41 27.9962 41C28.8896 41 31.1662 40.356 35.2008 38.9561C38.4572 37.8361 41.4543 36.8001 41.8865 36.6601C43.2122 36.2122 43.1834 34.4762 41.8577 34.4762C41.5984 34.4762 38.3996 35.4842 34.7108 36.7441L28.0251 39.0401L21.3105 36.7441C17.6218 35.4842 14.3941 34.4762 14.1348 34.4762C13.8754 34.4762 13.5008 34.6722 13.299 34.8962Z" fill="#373737"/>
+                    </svg>
+                  <div class="ecobag-cards__heading">
+                    От 5 видов
+                  </div>
+                  <div class="ecobag-cards__description">
+                    Бумаги <br> от&nbsp;производителя
+                  </div>
                 </div>
+              </div>  
+            </div>
+            <div class="ecobag-gallery">
+              <div class="ecobag-gallery__top">
+                <a href="">
+                  <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag-gallery__play">
+                    <g filter="url(#filter0_dd_3_394)">
+                    <circle cx="54" cy="42" r="34" fill="white"/>
+                    </g>
+                    <path d="M66 40.7679C67.3333 41.5378 67.3333 43.4622 66 44.232L48.75 54.1913C47.4167 54.9611 45.75 53.9989 45.75 52.4593L45.75 32.5407C45.75 31.0011 47.4167 30.0389 48.75 30.8087L66 40.7679Z" fill="#FF620A"/>
+                    <defs>
+                    <filter id="filter0_dd_3_394" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="12"/>
+                    <feGaussianBlur stdDeviation="10"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0.04 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_394"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.5"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                    <feBlend mode="normal" in2="effect1_dropShadow_3_394" result="effect2_dropShadow_3_394"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3_394" result="shape"/>
+                    </filter>
+                    </defs>
+                  </svg>                  
+                  <img src="images/ecobag-gallery__top1.png" alt="Ошибка загрузки изображения" class="ecobag-gallery__img">
+                </a>
               </div>
-            </div>  
-          </div>
-          <div class="ecobag-gallery">
-            <div class="ecobag-gallery__top">
-              <a href="">
-                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag-gallery__play">
-                  <g filter="url(#filter0_dd_3_394)">
-                  <circle cx="54" cy="42" r="34" fill="white"/>
-                  </g>
-                  <path d="M66 40.7679C67.3333 41.5378 67.3333 43.4622 66 44.232L48.75 54.1913C47.4167 54.9611 45.75 53.9989 45.75 52.4593L45.75 32.5407C45.75 31.0011 47.4167 30.0389 48.75 30.8087L66 40.7679Z" fill="#FF620A"/>
-                  <defs>
-                  <filter id="filter0_dd_3_394" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="12"/>
-                  <feGaussianBlur stdDeviation="10"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0 0.215686 0 0 0 0.04 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_394"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="1"/>
-                  <feGaussianBlur stdDeviation="0.5"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                  <feBlend mode="normal" in2="effect1_dropShadow_3_394" result="effect2_dropShadow_3_394"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3_394" result="shape"/>
-                  </filter>
-                  </defs>
-                </svg>                  
-                <img src="images/ecobag-gallery__top1.png" alt="Ошибка загрузки изображения">
-              </a>
-            </div>
-            <div class="ecobag-gallery__top">
-              <img src="images/ecobag-gallery__top2.png" alt="Ошибка загрузки изображения">
-            </div>
-            <div class="ecobag-gallery__middle">
-              <img src="images/ecobag-gallery__middle.png" alt="Ошибка загрузки изображения">
-            </div>
-            <div class="ecobag-gallery__bottom">
-              <img src="images/ecobag-gallery__bottom1.png" alt="Ошибка загрузки изображения">
-            </div>
-            <div class="ecobag-gallery__bottom">
-              <img src="images/ecobag-gallery___bottom2.png" alt="Ошибка загрузки изображения">
+              <div class="ecobag-gallery__top">
+                <img src="images/ecobag-gallery__top2.png" alt="Ошибка загрузки изображения" class="ecobag-gallery__img">
+              </div>
+              <div class="ecobag-gallery__middle">
+                <img src="images/ecobag-gallery__middle.png" alt="Ошибка загрузки изображения" class="ecobag-gallery__img">
+              </div>
+              <div class="ecobag-gallery__bottom">
+                <img src="images/ecobag-gallery__bottom1.png" alt="Ошибка загрузки изображения" class="ecobag-gallery__img">
+              </div>
+              <div class="ecobag-gallery__bottom">
+                <img src="images/ecobag-gallery___bottom2.png" alt="Ошибка загрузки изображения" class="ecobag-gallery__img">
+              </div>
             </div>
           </div>
         </div>
@@ -418,9 +476,9 @@
                 </div>       
               </a>
             </div>
+            <div class="catalog-prev swiper-button-prev"></div>
+            <div class="catalog-next swiper-button-next"></div>
           </div>
-          <div class="catalog-prev swiper-button-prev"></div>
-          <div class="catalog-next swiper-button-next"></div>
         </div>
       </section>
       <section class="clients">
@@ -495,24 +553,24 @@
                   и мы отправим Вам <span class="request-heading__strong">образцы</span> нашей продукции
                 </div>
               </div>
-            <div class="request-content__right">
-              <div class="request-form">
-                <div class="request-form__name">
-                  Консультация
-                </div>
-                <div class="request-form__note">
-                  бесплатно
-                </div>
-                <form action="#" class="request-form__body">
-                  <div class="request-form__items">
-                    <div class="request-form__input"><input type="text" placeholder="Ваше имя" class="input__name" required></div>
-                    <div class="request-form__input"><input type="tel" placeholder="Телефон" class="input__phone" required></div>
-                    <input type="submit" value="Оставить заявку" class="input__button">
+              <div class="request-content__right">
+                <div class="request-form">
+                  <div class="request-form__name">
+                    Консультация
                   </div>
-                </form>
-                <label class="request-form__description">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</label>
+                  <div class="request-form__note">
+                    бесплатно
+                  </div>
+                  <form action="#" class="request-form__body">
+                    <div class="request-form__items">
+                      <div class="request-form__input"><input type="text" placeholder="Ваше имя" class="input__name" required></div>
+                      <div class="request-form__input"><input type="tel" placeholder="Телефон" class="input__phone" required></div>
+                      <input type="submit" value="Оставить заявку" class="input__button">
+                    </div>
+                  </form>
+                  <label class="request-form__description">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</label>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -625,6 +683,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

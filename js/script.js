@@ -13,6 +13,33 @@ new Swiper('.catalog-slider',{
     slidesPerView: 5,
     spaceBetween: 12,
     loop: true,
+
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 12
+        },
+        580: {
+          slidesPerView: 2,
+          spaceBetween: 25
+        },
+        677: {
+          slidesPerView: 3,
+          spaceBetween: 12
+        },
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 12
+            },
+        993: {
+          slidesPerView: 4,
+          spaceBetween: 12
+        },
+        1280: {
+          slidesPerView: 5,
+          spaceBetween: 12
+        }
+    },
 });
 
 new Swiper('.clients-slider',{
@@ -25,6 +52,33 @@ new Swiper('.clients-slider',{
     slidesPerView: 6,
     spaceBetween: 12,
     loop: true,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 12
+      },
+      580: {
+        slidesPerView: 2,
+        spaceBetween: 25
+      },
+      677: {
+        slidesPerView: 3,
+        spaceBetween: 12
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 12
+          },
+      993: {
+        slidesPerView: 5,
+        spaceBetween: 12
+      },
+      1280: {
+        slidesPerView: 6,
+        spaceBetween: 12
+      }
+  },
 });
 
 new Swiper('.special-slider',{
@@ -37,4 +91,17 @@ new Swiper('.special-slider',{
     slidesPerView: 3,
     spaceBetween: 10,
     loop: true,
+});
+
+$('input[type="file"]').change(function() {
+    if (this.files[0]) // если выбрали файл
+    $(this).siblings('label').text(this.files[0].name);
+    $(this).siblings('label').addClass('active');
+    });
+
+$(document).ready(function() {
+  $('.menu__burger,.mobile-menu__close').click(function(event) {
+    $('.menu__burger,.mobile-menu').toggleClass('active');
+    $('body').toggleClass('lock')
+  });
 });

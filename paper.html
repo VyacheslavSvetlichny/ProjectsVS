@@ -12,8 +12,62 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header-paper">
+      <div class="mobile-menu">
+        <div class="mobile-menu__top">
+          <a href="" class="mobile-menu__link">
+            <img src="images/Header-logo__img.png" alt="" class="mobile-menu__logo">
+          </a>
+          <div class="mobile-menu__close">Закрыть</div>
+        </div>
+        <ul class="mobile-menu__content">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__section">
+              Главная
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="about.html" class="mobile-menu__section">
+              О компании
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="bags.html" class="mobile-menu__section">
+              Мешки
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="package.html" class="mobile-menu__section">
+              Бумажные пакеты
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="paper.html" class="mobile-menu__section">
+              Бумага
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="stuff.html" class="mobile-menu__section">
+              Наша работа
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="delivery.html" class="mobile-menu__section">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="contacts.html" class="mobile-menu__section">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <div class="mobile-menu__shadow"></div>
+      </div>
+      <header class="header header-paper">
         <div class="container header__container">
+          <div class="menu__burger">
+            <span class="menu-burger__line"></span>
+          </div>
           <a href="index.html" class="header-logo">
             <img src="images/Header-logo__img.png" alt="Логотип не загружен" class="header-logo__img">
           </a>
@@ -173,7 +227,7 @@
                 <div class="consultation-form__items">
                   <div class="consultation-form__input"><input type="text" placeholder="Ваше имя" class="input__name" required></div>
                   <div class="consultation-form__input"><input type="tel" placeholder="Телефон" class="input__phone" required></div>
-                  <input type="submit" value="Оставить заявку" class="input__button">
+                  <div class="consultation-form__input"><input type="submit" value="Оставить заявку" class="input__button"></div>
                 </div>
               </form>
               <label class="consultation-form__description">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</label>
