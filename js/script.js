@@ -91,6 +91,33 @@ new Swiper('.special-slider',{
     slidesPerView: 3,
     spaceBetween: 10,
     loop: true,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      580: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      677: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 10
+          },
+      993: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      }
+  },
 });
 
 $('input[type="file"]').change(function() {
