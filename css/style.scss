@@ -434,6 +434,14 @@ body {
   }
 
   @include _768() {
+    .header__container {
+      min-height: 85px;
+    }
+
+    .header-logo__img {
+      width: 50px;
+    }
+
     .header__phone-main {
       flex: 0 0 36px;
       width: 36px;
@@ -751,8 +759,18 @@ body {
     }
 
     .title__heading-description {
-      font-size: 19px;
-      line-height: 24px;
+      margin-bottom: 35px;
+      font-size: 15px;
+      line-height: 16px;
+    }
+
+    .heading-description-strong {
+      font-size: 15px;
+      line-height: 16px;
+    }
+
+    .title-br {
+      display: none;
     }
 
     .title__background-spiral {
@@ -1078,7 +1096,7 @@ body {
 
 @include _576() {
   .ecobag {
-    padding-top: 200px;
+    padding-top: 135px;
   }
 }
 

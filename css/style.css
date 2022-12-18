@@ -399,6 +399,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .header .header__container {
+    min-height: 85px;
+  }
+  .header .header-logo__img {
+    width: 50px;
+  }
   .header .header__phone-main {
     flex: 0 0 36px;
     width: 36px;
@@ -670,8 +676,16 @@ body {
     line-height: 30px;
   }
   .title .title__heading-description {
-    font-size: 19px;
-    line-height: 24px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .title .heading-description-strong {
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .title .title-br {
+    display: none;
   }
   .title .title__background-spiral {
     display: none;
@@ -973,7 +987,7 @@ body {
 
 @media (max-width: 576px) {
   .ecobag {
-    padding-top: 200px;
+    padding-top: 135px;
   }
 }
 .catalog {
