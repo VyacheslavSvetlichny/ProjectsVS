@@ -2299,12 +2299,14 @@ body {
 }
 .bags-description::before {
   position: absolute;
+  display: block;
   content: "";
-  height: 60px;
+  height: 100%;
   width: 6px;
-  top: 0px;
+  top: 0%;
   left: -30px;
-  background: url(../images/svg/bag-description__line.svg);
+  background: #639E2D;
+  border-radius: 10px;
 }
 .bags-description__strong {
   font-family: "Onest", "Sans-serif";
@@ -3259,12 +3261,14 @@ input::-webkit-inner-spin-button {
 }
 .paper-description::before {
   position: absolute;
+  display: block;
   content: "";
-  height: 60px;
+  height: 100%;
   width: 6px;
-  top: -50%;
+  top: 0%;
   left: -30px;
-  background: url(../images/svg/paper-description__line.svg);
+  background: #639E2D;
+  border-radius: 10px;
 }
 .paper-description__strong {
   font-family: "Onest", "Sans-serif";
@@ -3341,12 +3345,14 @@ input::-webkit-inner-spin-button {
 }
 .paper-order::before {
   position: absolute;
+  display: block;
   content: "";
-  height: 60px;
+  height: 100%;
   width: 6px;
-  top: 0;
+  top: 0%;
   left: -30px;
-  background: url(../images/svg/paper-description__line.svg);
+  background: #639E2D;
+  border-radius: 10px;
 }
 .paper-order__strong {
   font-family: "Onest", "Sans-serif";
