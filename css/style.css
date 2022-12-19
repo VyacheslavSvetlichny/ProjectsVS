@@ -89,6 +89,7 @@ h6 {
 }
 
 body {
+  margin-top: 130px;
   height: 100%;
   line-height: 1;
   font-size: 16px;
@@ -96,6 +97,11 @@ body {
   font-family: "Onest", "Sans-serif";
 }
 
+@media (max-width: 768px) {
+  body {
+    margin-top: 85px;
+  }
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -229,10 +235,11 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
+  background: white;
   z-index: 50;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 12px 20px rgba(55, 55, 55, 0.04);
 }
@@ -907,10 +914,18 @@ body {
   right: -650px;
   width: 500px;
 }
+.ecobag-gallery__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
 .ecobag-gallery__play {
   position: absolute;
-  top: 40px;
-  left: 66px;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .ecobag-gallery__play path {
   transition-property: all;
@@ -965,8 +980,8 @@ body {
     margin-top: 20px;
   }
   .ecobag .ecobag-gallery__img {
-    height: 100%;
-    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 768px) {
@@ -974,14 +989,16 @@ body {
     font-size: 35px;
     line-height: 45px;
   }
-  .ecobag .ecobag-gallery__play {
-    left: 90px;
-  }
 }
 @media (max-width: 576px) {
   .ecobag .ecobag-cards__item {
     flex: 0 0 calc(100% - 10px);
     width: calc(100% - 10px);
+  }
+  .ecobag .ecobag-gallery__top,
+.ecobag .ecobag-gallery__middle,
+.ecobag .ecobag-gallery__bottom {
+    height: 140px;
   }
 }
 

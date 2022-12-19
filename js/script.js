@@ -131,4 +131,10 @@ $(document).ready(function() {
     $('.menu__burger,.mobile-menu').toggleClass('active');
     $('body').toggleClass('lock')
   });
+  $('.mobile-menu__shadow').click(function (event) {
+		$('.mobile-menu').removeClass('active');
+    $('body').removeClass('lock');
+		$('.menu__burger').removeClass('active');
+	});
+
 });
