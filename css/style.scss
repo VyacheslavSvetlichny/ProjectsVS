@@ -135,6 +135,224 @@ body {
   overflow: hidden;
 }
 
+.modal-window{
+	display: none;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10001;
+    display: none;
+    overflow: hidden;
+		overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0; 
+	.modal-shadow{
+		position: fixed;
+		z-index: 10000;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.modal-content{
+		position: absolute;
+		width: 100%;		
+		left: 50%;
+		top: 50%;
+		@include set_center_wh();
+		padding: 55px 60px 50px 60px;
+		background: #fff;
+		z-index: 10001;
+		box-shadow: 0 0 20px 3px #0000009e;
+		max-width: 490px;
+		max-height: 100%;
+    overflow-y: auto;
+		&::after{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: block;
+			background: url(../images/fon1.png) repeat left top;
+			background-size: contain;
+			content: "";
+			opacity: 0.02;
+			z-index: -1;
+		}
+	}
+	.modal-close{
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 40px;
+		width: 40px;
+		cursor: pointer;
+		@include set_hover(.3s);
+		&::after{
+			position: absolute;
+		  content: "\e914";
+			font-family: 'icomoon';
+			left: 50%;
+			top: 50%;
+			@include set_center_wh();
+			font-size: 15px;
+			color: #BBBBBA;
+			@include set_hover(.3s);
+		}
+		&:hover{
+			&::after{
+				color: #E21E24;
+			}
+		}
+	}
+	.modal-title{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 100%;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0 0 50px;
+		&.small-margin{
+			margin-bottom: 30px;
+		}
+	}
+	.modal-text{
+		text-align: center;
+		font-size: 15px;		
+		color: #4c4c4c;
+		font-weight: 500;
+	}
+	form{
+		display: block;
+		margin-top: 25px;
+	}
+	input{
+		display: block;
+		width: 100%;
+	}
+	.head{
+		font-size: 15px;
+		font-size: 15px;
+		color: $MainColorText;
+		font-weight: 500;
+	}
+	textarea{
+		resize: none;
+		border-radius: 6px;
+		width: 100%;
+		font-size: 15px;
+		font-weight: 500;
+		color: $MainColorText;
+		height: 100px;
+		background: #F3F2F2;
+		padding:12px 15px;
+		border: 1px solid #CBCBCB;
+	}
+	
+	.modal-item{
+		margin-bottom: 16px;
+	}
+	.agree{
+		position: relative;
+		display: inline-block;
+		text-align: left;
+		padding-left: 40px;
+		padding-bottom: 0px;
+		width: auto;
+		cursor: pointer;
+		&::before{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			@include set_center_h();
+			width: 25px; 
+			height: 25px;
+			content: "";
+			background: #ffffff;
+			border: 2px solid #006fff;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			left: 7px;
+			top: calc(50% - 8px);
+			width: 13px;
+			height: 7px;
+			border-radius: 1px;
+			border-left: 3px solid #006fff;
+			border-bottom: 3px solid #006fff;
+			@include set_hover(.3s);
+			@include set_transform(rotate(-45deg));
+			opacity: 0;
+		}
+		&.active{
+			&::after{
+				opacity: 1;
+			}
+		}		
+	}
+	
+	.modal-checkbox-label{
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 189.3%;
+		color: #1C1B17;
+	}
+	.modal-bottom-text{
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: #BBBBBA;
+		margin-top: 50px;
+	}
+	.modal-buttons{
+		@include flexbox();
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+	.modal-input-desc{
+		display: block;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+	.modal-password-block{
+		margin-top: 24px;
+	}
+	.modal-password-block-2{
+		margin-bottom: 32px;
+	}
+	.modal-captcha{
+		margin-bottom: 5px;
+	}
+	@include _768(){
+		.modal-content{
+			position: absolute;
+			width: auto;
+			top: 0;
+			left: 0;
+			bottom: 0px;
+			right: 0;
+    		max-width: none;
+			@include set_transform(none);
+		}
+	}
+	@include _500(){		
+		.modal-content{
+			padding: 50px 15px 25px 15px;
+		}
+	}
+}
+
 .container {
   @include Container;
   position: relative;
@@ -1093,11 +1311,16 @@ body {
   @include _768() {
     .ecobag-heading {
       font-size: 35px;
-      line-height: 45px;
+      line-height: 34px;
     }
   }
 
   @include _576() {
+    .ecobag-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .ecobag-cards__item {
       flex: 0 0 calc(100% - 10px);
       width: calc(100% - 10px);
@@ -1405,7 +1628,7 @@ body {
   @include _768() {
     .catalog-heading {
       font-size: 35px;
-      line-height: 45px;
+      line-height: 34px;
     }
 
     .catalog-prev {
@@ -1426,6 +1649,11 @@ body {
   }
 
   @include _576() {
+    .catalog-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .catalog-goods__item {
       flex: 0 0 calc(100% - 16px);
     }
@@ -1445,7 +1673,7 @@ body {
 
   &-content__top {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -1607,7 +1835,7 @@ body {
   @include _768() {
     .clients-heading {
       font-size: 35px;
-      line-height: 45px;
+      line-height: 34px;
     }
 
     .clients-prev {
@@ -1624,6 +1852,43 @@ body {
     .clients-next::after {
       font-size: 28px;
       color: $SecondColorText;
+    }
+  }
+
+  @include _576() {
+    .clients-prev {
+      top: 60%;
+      left: 0;
+      border: 1px solid rgb(119, 119, 119);
+      background: $AdditionalColorText;
+
+      &:hover {
+        background: rgb(50, 85, 17);
+        &::after {
+          color: #ffffff;
+        }
+      }
+    }
+  
+    .clients-next {
+      top: 60%;
+      right: 0;
+      border: 1px solid rgb(119, 119, 119);
+      background: $AdditionalColorText;
+
+      &:hover {
+        background: rgb(50, 85, 17);
+        &::after {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .clients-heading {
+      font-size: 30px;
+      line-height: 29px;
+      flex: 0 0 100%;
+      margin-bottom: 15px;
     }
   }
 }
@@ -2310,6 +2575,11 @@ body {
   }
 
   @include _768() {
+    .contacts-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+
     .contacts-content__left {
       flex: 0 0 100%;
       margin-right: 0;
@@ -2329,6 +2599,13 @@ body {
     #map-contacts {
       width: 100%;
       height: 350px;
+    }
+  }
+
+  @include _576() {
+    .contacts-heading {
+      font-size: 30px;
+      line-height: 29px;
     }
   }
 }
@@ -2362,6 +2639,20 @@ body {
     font-size: 40px;
     line-height: 51px;
     color: $MainColorText;
+  }
+
+  @include _768() {
+    .about-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
+  @include _576() {
+    .about-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
   }
 }
 
@@ -2529,7 +2820,19 @@ body {
     }
   }
 
+  @include _768() {
+    .delivery-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
   @include _576() {
+    .delivery-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .delivery-types__item {
       flex: 0 0 calc(100% - 30px);
     }
@@ -2562,6 +2865,20 @@ body {
     font-size: 40px;
     line-height: 51px;
     color: $MainColorText;
+  }
+
+  @include _768() {
+    .stuff-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
+  @include _576() {
+    .stuff-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
   }
 }
 
@@ -2620,7 +2937,19 @@ body {
     }
   }
 
+  @include _768() {
+    .bags-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
   @include _576() {
+    .bags-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .bags-description {
       font-size: 20px;
       line-height: 22px;
@@ -2793,7 +3122,19 @@ body {
     }
   }
 
+  @include _768() {
+    .stock-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
   @include _576() {
+    .stock-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .stock-content__item {
       flex: 0 0 calc(100% - 30px);
       width: calc(100% - 30px);
@@ -3174,7 +3515,19 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  @include _768() {
+    .factory-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
   @include _576() {
+    .factory-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .factory-products__item {
       flex: 0 0 calc(100% - 30px);
       width: calc(100% - 30px);
@@ -3748,7 +4101,19 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  @include _768() {
+    .paper-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
   @include _576() {
+    .paper-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+
     .paper-supplies-item {
       flex: 0 0 calc(100% - 30px);
       width: calc(100% - 30px);
@@ -3992,7 +4357,7 @@ input::-webkit-inner-spin-button {
 
   @include _768() {
     .offer-content .input__button {
-      flex: 0 0 100%;
+      flex: 0 0 230px;
     }
 
     .offer-content .input-label {
@@ -4023,4 +4388,30 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.package {
+  padding: 30px 0 688px;
 
+  &-heading {
+    font-family: $FontFamily;
+    margin: 10px 0 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    color: $MainColorText;
+  }
+
+  @include _768() {
+    .package-heading {
+      font-size: 35px;
+      line-height: 34px;
+    }
+  }
+
+  @include _576() {
+    .package-heading {
+      font-size: 30px;
+      line-height: 29px;
+    }
+  }
+}

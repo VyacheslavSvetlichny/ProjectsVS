@@ -92,7 +92,7 @@
               <a href="tel:+79139105151" class="header__phone-additional">
                 <span class="header__phone-mask">+7 (913)</span> 925-38-12
               </a>
-              <a href="#" class="header__question-button">
+              <a href="#open-modal" data-modal="#modal-login-in" class="header__question-button">
                 Задать вопрос
               </a>
             </div>
@@ -252,7 +252,7 @@
             </div>
             <div class="ecobag-gallery">
               <div class="ecobag-gallery__top">
-                <a href="">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                   <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" class="ecobag-gallery__play">
                     <g filter="url(#filter0_dd_3_394)">
                     <circle cx="54" cy="42" r="34" fill="white"/>
@@ -682,6 +682,36 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal-window modal-all" id="modal-login-in">
+      <div class="modal-content">
+          <div class="modal-close">
+          </div>
+          <p class="modal-title">
+            Авторизация
+          </p>
+          <form class="modal-form check-valid">
+              <div class="modal-items">
+                  <div class="modal-item">
+                      <input class="input-ui" name="login" type="text" required placeholder="Логин">
+                  </div>
+                  <div class="modal-item">
+                      <input class="input-ui" name="password" type="password" required placeholder="Пароль" autocomplete="off">
+                  </div>
+                  <div class="modal-item">
+                      <input type="checkbox" id="login-in-remember"><label class="modal-checkbox-label" for="login-in-remember">Запомнить меня на этом компьютере</label>
+                  </div>
+                  <div class="modal-buttons">
+                      <button disabled class="modal-button disabled-button button-ui button-ui-with-small-arrow">Войти</button>
+                      <a href="#" class="ui-common-link">Забыли свой пароль?</a>
+                  </div>
+                  <div class="modal-bottom-text">Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</div>
+                  <a href="#open-modal" data-modal="#modal-registration" class="ui-common-link">Зарегистрироваться</a>
+              </div>
+          </form>
+      </div>
+      <div class="modal-shadow">
+      </div>
     </div>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/inputmask.min.js"></script>
