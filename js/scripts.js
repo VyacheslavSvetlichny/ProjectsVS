@@ -5,6 +5,11 @@ new Swiper('.skill-hard',{
         prevEl: '.skill-hard-prev'
     },
 
+    pagination: {
+        el: '.skill-hard-pagination',
+        clickable: true,
+    },
+
     slidesPerView: 4,
     spaceBetween: 20,
 

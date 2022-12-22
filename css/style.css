@@ -191,22 +191,6 @@ body {
   border-radius: 100px;
   box-shadow: 12px 12px 13px 2px rgba(34, 60, 80, 0.2);
 }
-@-webkit-keyframes purple-ellipse {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes purple-ellipse {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .title-background__front {
   position: absolute;
   -o-object-fit: contain;
@@ -336,6 +320,10 @@ body {
 }
 .skill-hard {
   overflow: hidden;
+  margin-bottom: 50px;
+}
+.skill-hard__content {
+  margin-bottom: 20px;
 }
 .skill .skill-hard-prev {
   position: absolute;
@@ -362,6 +350,17 @@ body {
 .skill .skill-hard-next::after {
   font-size: 32px;
   color: white;
+}
+.skill .skill-hard-pagination {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.skill .skill-hard-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background-color: #5E3BEE;
 }
 .skill__item {
   height: unset;
