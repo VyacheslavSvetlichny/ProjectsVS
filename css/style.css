@@ -93,12 +93,39 @@ body {
   color: #1C1E53;
 }
 
+.up-button {
+  position: fixed;
+  text-align: center;
+  top: 900px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background: #5E3BEE;
+  border-radius: 15px;
+  z-index: 9999;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.up-button.active {
+  opacity: 1;
+}
+.up-button__icon {
+  padding-top: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.up-button:hover {
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 50;
+  z-index: 9999;
   background: white;
   box-shadow: 0px 5.33333px 80px rgba(0, 0, 0, 0.1);
 }
@@ -624,7 +651,7 @@ body {
 .portfolio-content__bottom .portfolio-item {
   flex: 0 0 calc(33.33% - 40px);
   width: calc(33.33% - 40px);
-  margin: 0 20px 20px;
+  margin: 0 20px 40px;
   background: #FFFFFF;
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
   transition-property: all;
@@ -641,8 +668,8 @@ body {
 }
 .portfolio-content__bottom .portfolio-item__logo {
   position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   width: 100%;

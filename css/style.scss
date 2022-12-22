@@ -72,6 +72,36 @@ body {
   color: $MainColorText;
 }
 
+.up-button {
+  position: fixed;
+  text-align: center;
+  top: 900px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background: #5E3BEE;
+  border-radius: 15px;
+  z-index: 9999;
+  transition: all 0.5s;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &__icon {
+    padding-top: 15px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 // Header
 
 .header {
@@ -79,7 +109,7 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 50;
+  z-index: 9999;
   background: white;
   box-shadow: 0px 5.33333px 80px rgba(0, 0, 0, 0.1);
 
@@ -238,7 +268,7 @@ body {
     &:hover {
       cursor: pointer;
       background: $MainColorText;
-    } 
+    }
   }
 
   @keyframes title-more__button {
@@ -657,7 +687,7 @@ body {
     .portfolio-item {
       flex: 0 0 calc(33.33% - 40px);
       width: calc(33.33% - 40px);
-      margin: 0 20px 20px;
+      margin: 0 20px 40px;
       background: #FFFFFF;
       box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
       @include set_hover($time);
@@ -675,7 +705,7 @@ body {
 
       &__logo {
         position: absolute;
-        object-fit: contain;
+        object-fit: cover;
         top: 0;
         left: 0;
         width: 100%;

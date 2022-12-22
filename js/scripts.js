@@ -89,3 +89,24 @@ $(document).ready(function() {
       $('.title-about').toggleClass('active');
     });
   });
+
+
+var $page = $('html, body');
+  $('a[href*="#"]').click(function() {
+  if($(this).attr('href')!="#"){
+  $page.animate({
+  scrollTop: $($.attr(this, 'href')).offset().top - 120}, 400);
+  return false;
+  }
+});
+
+$(function () {
+  $(window).scroll(function(event) {
+    if($(this).scrollTop() > 30) {
+    $(".up-button").addClass("active");
+  }
+  else {
+    $(".up-button").removeClass("active");
+  }
+  }); 
+});

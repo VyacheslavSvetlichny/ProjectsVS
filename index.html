@@ -14,12 +14,12 @@
     <title>My CV</title> 
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <header class="header">
         <div class="container header-container">
           <div class="header-content">
             <div class="header-content__left">
-              <a href="#" class="header-logo">
+              <a href="#wrapper" class="header-logo">
                 <img src="images/header-logo__img.png" alt="Логотип не загружен" class="header-logo__img">
                 <div class="header-name">
                   CV
@@ -30,22 +30,22 @@
               <nav class="header-menu menu">
                 <ul class="menu-list">
                   <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">
+                    <a href="#about" class="menu-list__link">
                       Обо мне
                     </a>
                   </li>
                   <li class="menu-list__item menu-catalog">
-                    <a href="#" class="menu-list__link">
+                    <a href="#skill" class="menu-list__link">
                       Навыки и умения
                     </a>
                   </li>
                   <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">
+                    <a href="#portfolio" class="menu-list__link">
                       Портфолио
                     </a>
                   </li>
                   <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">
+                    <a href="#media" class="menu-list__link">
                       Контакты
                     </a>
                   </li>
@@ -62,6 +62,9 @@
       </header>
       <section class="title">
         <div class="container title-container">
+          <a href="#wrapper" class="up-button">
+            <i class="fas fa-arrow-up up-button__icon"></i>
+          </a>
           <div class="title-content">
             <h2 class="title-heading__start heading__small">
               Привет! Меня зовут Вячеслав
@@ -95,7 +98,7 @@
               </div>
               <div class="title-about__row">
                 <div class="title-about__item">
-                  М. жительства 
+                  Место жительства 
                 </div>
                 <div class="title-about__dotted"></div>
                 <div class="title-about__item">
@@ -104,7 +107,7 @@
               </div>
               <div class="title-about__row">
                 <div class="title-about__item">
-                  Сем. положение
+                  Семейное положение
                 </div>
                 <div class="title-about__dotted"></div>
                 <div class="title-about__item">
@@ -132,10 +135,10 @@
             </div>
           </div>
           <img src="images/test3.jpg" alt="" class="title-background__front">
-          <a href="" class="title-contact__button">Связаться со мной</a>
+          <a href="#" class="title-contact__button">Связаться со мной</a>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-container container">
           <div class="about-content">
             <div class="about-content__left">
@@ -155,7 +158,7 @@
           </div>
         </div>
       </section>
-      <section class="skill">
+      <section class="skill" id="skill">
         <div class="skill-container container">
           <h3 class="skill-heading__small heading__small">
             Навыки и умения
@@ -220,7 +223,7 @@
                   БЭМ
                 </div>
                 <div class="skill-hard__description skill__description">
-                  Понимание методологии БЭМ и умение её применять на практике
+                  Понимание методологии БЭМ и умение применять её на практике
                 </div>
               </div>
               <div class="skill-hard__item skill__item swiper-slide">
@@ -253,7 +256,7 @@
                   Языки
                 </div>
                 <div class="skill-hard__description skill__description">
-                  Знание английского на среднем уровне (Могу читать техническую литературу). <br><br>Знание китайского языка (требудет доп. подготовки)
+                  Знание английского на среднем уровне (Могу читать техническую литературу). <br><br>Знание китайского языка (требует доп. подготовки)
                 </div>
               </div>
               <div class="skill-hard__item skill__item swiper-slide">
@@ -362,7 +365,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolio-container container">
           <div class="portfolio-content__top">
             <div class="portfolio-heading">
@@ -378,7 +381,7 @@
             </a>
           </div>
           <div class="portfolio-content__bottom">
-            <a href="" class="portfolio-item">
+            <a href="#" class="portfolio-item">
               <div class="portfolio-item__img">
                 <img src="images/portfolio__logo.png" alt="" class="portfolio-item__logo">
               </div>
@@ -389,12 +392,12 @@
                 <div class="portfolio-item__description">
                   Здесь будет описание моих будущих работ
                 </div>
-                <div href="" class="portfolio-item__button">
+                <div href="#" class="portfolio-item__button">
                   Перейти
                 </div>
               </div>
             </a>
-            <a href="" class="portfolio-item">
+            <a href="#" class="portfolio-item">
               <div class="portfolio-item__img">
                 <img src="images/portfolio__logo.png" alt="" class="portfolio-item__logo">
               </div>
@@ -405,12 +408,12 @@
                 <div class="portfolio-item__description">
                   Здесь будет описание моих будущих работ
                 </div>
-                <div href="" class="portfolio-item__button">
+                <div href="#" class="portfolio-item__button">
                   Перейти
                 </div>
               </div>
             </a>
-            <a href="" class="portfolio-item">
+            <a href="#" class="portfolio-item">
               <div class="portfolio-item__img">
                 <img src="images/portfolio__logo.png" alt="" class="portfolio-item__logo">
               </div>
@@ -421,7 +424,7 @@
                 <div class="portfolio-item__description">
                   Здесь будет описание моих будущих работ
                 </div>
-                <div href="" class="portfolio-item__button">
+                <div href="#" class="portfolio-item__button">
                   Перейти
                 </div>
               </div>
@@ -429,7 +432,7 @@
           </div>
         </div>
       </section>
-      <section class="media">
+      <section class="media" id="media">
         <div class="media-container container">
           <div class="media-heading">
             <h3 class="media-heading__small heading__small">
@@ -440,13 +443,13 @@
             </h2>
           </div>
           <div class="media-content">
-            <a href="" class="media-content__item">
+            <a href="#" class="media-content__item">
               <img src="images/media__vk.png" alt="" class="media-content__img">
             </a>
-            <a href="" class="media-content__item">
+            <a href="#" class="media-content__item">
               <img src="images/media__git.png" alt="" class="media-content__img">
             </a>
-              <a href="" class="media-content__item">
+              <a href="#" class="media-content__item">
                 <img src="images/media__phone.png" alt="" class="media-content__img">
               </a>
           </div>
