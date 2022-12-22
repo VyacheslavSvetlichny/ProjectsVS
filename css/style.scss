@@ -232,9 +232,12 @@ body {
     background: #5E3BEE;
     border-radius: 15px;
     animation: title-more__button 5s linear 2s infinite;
+    box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+    @include set_hover($time);
 
     &:hover {
       cursor: pointer;
+      background: $MainColorText;
     } 
   }
 
@@ -380,6 +383,12 @@ body {
     color: $AdditionalColorText;
     background: $SecondColorText;
     border-radius: 6px;
+    box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+    @include set_hover($time);
+
+    &:hover {
+      background: $MainColorText;
+    } 
   }
 }
 
@@ -472,6 +481,11 @@ body {
     left: -65px;
     background-color: #5E3BEE;
     border-radius: 15px;
+    @include set_hover($time);
+
+    &:hover {
+      background: $MainColorText;
+    }
 
     &::after {
       font-size: 32px;
@@ -487,6 +501,11 @@ body {
     right: -65px;
     background-color: #5E3BEE;
     border-radius: 15px;
+    @include set_hover($time);
+
+    &:hover {
+      background: $MainColorText;
+    }
 
     &::after {
       font-size: 32px;
@@ -515,6 +534,11 @@ body {
     left: -65px;
     background-color: #5E3BEE;
     border-radius: 15px;
+    @include set_hover($time);
+
+    &:hover {
+      background: $MainColorText;
+    }
 
     &::after {
       font-size: 32px;
@@ -530,6 +554,11 @@ body {
     right: -65px;
     background-color: #5E3BEE;
     border-radius: 15px;
+    @include set_hover($time);
+
+    &:hover {
+      background: $MainColorText;
+    }
 
     &::after {
       font-size: 32px;
@@ -556,6 +585,11 @@ body {
     background: #cae0eb;
     border-radius: 11px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    @include set_hover($time);
+
+    &:hover {
+      box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+    }
 
     .skill-logo {
       display: block;
@@ -626,6 +660,12 @@ body {
       margin: 0 20px 20px;
       background: #FFFFFF;
       box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+      @include set_hover($time);
+
+      &:hover {
+        box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+        transform: scale(1.1);
+      }
 
       &__img {
         position: relative;
@@ -670,7 +710,7 @@ body {
       &__button {
         display: inline-block;
         padding: 10px 20px;
-        font-family: 'Roboto';
+        font-family: $FontFamily;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -697,6 +737,11 @@ body {
     background: #E62872;
     box-shadow: 0px 2px 3px rgba(16, 24, 40, 0.05);
     border-radius: 11px;
+    @include set_hover($time);
+
+    &:hover {
+      background: darken(#E62872, 10%);
+    }
   }
 }
 
@@ -723,6 +768,12 @@ body {
       margin: 0 10px 10px;
       border-radius: 100%;
       box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+      @include set_hover($time);
+
+      &:hover {
+        box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+        transform: scale(1.1);
+      }
     }
 
     &__img {
@@ -754,6 +805,11 @@ body {
       font-size: 18px;
       line-height: 27px;
       color: $MainColorText;
+      @include set_hover($time);
+
+      &:hover {
+        color: $SecondColorText;
+      }
     }
   }
 }

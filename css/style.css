@@ -241,9 +241,13 @@ body {
   border-radius: 15px;
   -webkit-animation: title-more__button 5s linear 2s infinite;
           animation: title-more__button 5s linear 2s infinite;
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  transition-property: all;
+  transition-duration: 0.7s;
 }
 .title .title-more__button:hover {
   cursor: pointer;
+  background: #1C1E53;
 }
 @-webkit-keyframes title-more__button {
   2% {
@@ -385,6 +389,12 @@ body {
   color: #FFFFFF;
   background: #5E3BEE;
   border-radius: 6px;
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.title-contact__button:hover {
+  background: #1C1E53;
 }
 
 .about {
@@ -458,6 +468,11 @@ body {
   left: -65px;
   background-color: #5E3BEE;
   border-radius: 15px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.skill .skill-soft-prev:hover {
+  background: #1C1E53;
 }
 .skill .skill-soft-prev::after {
   font-size: 32px;
@@ -471,6 +486,11 @@ body {
   right: -65px;
   background-color: #5E3BEE;
   border-radius: 15px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.skill .skill-soft-next:hover {
+  background: #1C1E53;
 }
 .skill .skill-soft-next::after {
   font-size: 32px;
@@ -495,6 +515,11 @@ body {
   left: -65px;
   background-color: #5E3BEE;
   border-radius: 15px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.skill .skill-hard-prev:hover {
+  background: #1C1E53;
 }
 .skill .skill-hard-prev::after {
   font-size: 32px;
@@ -508,6 +533,11 @@ body {
   right: -65px;
   background-color: #5E3BEE;
   border-radius: 15px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.skill .skill-hard-next:hover {
+  background: #1C1E53;
 }
 .skill .skill-hard-next::after {
   font-size: 32px;
@@ -530,6 +560,11 @@ body {
   background: #cae0eb;
   border-radius: 11px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.skill__item:hover {
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
 }
 .skill__item .skill-logo {
   display: block;
@@ -592,6 +627,12 @@ body {
   margin: 0 20px 20px;
   background: #FFFFFF;
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.portfolio-content__bottom .portfolio-item:hover {
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  transform: scale(1.1);
 }
 .portfolio-content__bottom .portfolio-item__img {
   position: relative;
@@ -631,7 +672,7 @@ body {
 .portfolio-content__bottom .portfolio-item__button {
   display: inline-block;
   padding: 10px 20px;
-  font-family: "Roboto";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -654,6 +695,11 @@ body {
   background: #E62872;
   box-shadow: 0px 2px 3px rgba(16, 24, 40, 0.05);
   border-radius: 11px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.portfolio .portfolio-button:hover {
+  background: #c4175a;
 }
 
 .media {
@@ -676,6 +722,12 @@ body {
   margin: 0 10px 10px;
   border-radius: 100%;
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.media-content__item:hover {
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  transform: scale(1.1);
 }
 .media-content__img {
   width: 100%;
@@ -702,4 +754,9 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1C1E53;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.footer .menu-list__link:hover {
+  color: #5E3BEE;
 }/*# sourceMappingURL=style.css.map */
