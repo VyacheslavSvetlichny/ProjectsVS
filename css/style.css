@@ -227,6 +227,45 @@ body {
   height: 65px;
   background: #5E3BEE;
   border-radius: 15px;
+  -webkit-animation: title-more__button 6s linear 2s infinite;
+          animation: title-more__button 6s linear 2s infinite;
+}
+.title .title-more__button:hover {
+  cursor: pointer;
+}
+@-webkit-keyframes title-more__button {
+  2% {
+    transform: rotate(-10deg);
+  }
+  3% {
+    transform: rotate(10deg);
+  }
+  4% {
+    transform: rotate(-10deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  6% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes title-more__button {
+  2% {
+    transform: rotate(-10deg);
+  }
+  3% {
+    transform: rotate(10deg);
+  }
+  4% {
+    transform: rotate(-10deg);
+  }
+  5% {
+    transform: rotate(10deg);
+  }
+  6% {
+    transform: rotate(0deg);
+  }
 }
 .title .title-more__icon {
   padding-top: 15px;
