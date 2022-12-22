@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -75,7 +76,7 @@ body {
 }
 
 .heading__small {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -84,7 +85,7 @@ body {
 }
 
 .heading__big {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -153,7 +154,7 @@ body {
   flex: 0 0 auto;
 }
 .header-content__center .menu-list__link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -161,11 +162,11 @@ body {
   color: #1C1E53;
 }
 .header-content__right {
-  flex: 0 0 210px;
+  flex: 0 0 auto;
 }
 .header-content__right .header__button {
   padding: 10px 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -196,7 +197,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   top: 50px;
-  right: 120px;
+  right: 105px;
   width: 320px;
   border-radius: 80px;
   border: 5px solid #5E3BEE;
@@ -205,9 +206,9 @@ body {
 .title-background__name {
   position: absolute;
   top: 360px;
-  right: 100px;
+  right: 80px;
   padding: 20px 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -222,13 +223,13 @@ body {
   position: absolute;
   text-align: center;
   top: 368px;
-  right: 470px;
+  right: 465px;
   width: 65px;
   height: 65px;
   background: #5E3BEE;
   border-radius: 15px;
-  -webkit-animation: title-more__button 6s linear 2s infinite;
-          animation: title-more__button 6s linear 2s infinite;
+  -webkit-animation: title-more__button 5s linear 2s infinite;
+          animation: title-more__button 5s linear 2s infinite;
 }
 .title .title-more__button:hover {
   cursor: pointer;
@@ -278,12 +279,11 @@ body {
   position: absolute;
   padding: 15px;
   top: 450px;
-  right: 0px;
+  right: -15px;
   width: 600px;
   background: white;
   border-radius: 20px;
-  border: 5px solid #5E3BEE;
-  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.3098039216);
   z-index: 2;
   transform: scale(0);
   transition: all ease 0.3s;
@@ -294,7 +294,7 @@ body {
 .title .title-about__heading {
   margin-bottom: 25px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -313,7 +313,7 @@ body {
 }
 .title .title-about__item {
   flex: 0 0 auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -322,7 +322,7 @@ body {
 }
 .title .title-about__dotted {
   flex: 1 1 33.33%;
-  border-bottom: 3px dotted #5E3BEE;
+  border-bottom: 2px dotted #ababab;
   opacity: 30%;
 }
 .title-background__css {
@@ -343,7 +343,7 @@ body {
 }
 .title-content {
   position: relative;
-  width: 600px;
+  width: 620px;
   margin-bottom: 53px;
   z-index: 2;
 }
@@ -357,7 +357,7 @@ body {
   margin-bottom: 20px;
 }
 .title-content .title-heading__description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -366,7 +366,7 @@ body {
 }
 .title-contact__button {
   padding: 18px 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -404,7 +404,7 @@ body {
   margin-bottom: 30px;
 }
 .about-content__right .about-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -539,7 +539,7 @@ body {
 .skill__item .skill__name {
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -550,7 +550,7 @@ body {
   font-size: 20px;
 }
 .skill__item .skill__description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -601,7 +601,7 @@ body {
 }
 .portfolio-content__bottom .portfolio-item__heading {
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -610,7 +610,7 @@ body {
 }
 .portfolio-content__bottom .portfolio-item__description {
   margin-bottom: 35px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -633,11 +633,7 @@ body {
   margin-bottom: 20px;
 }
 .portfolio .portfolio-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 240px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -647,16 +643,6 @@ body {
   background: #E62872;
   box-shadow: 0px 2px 3px rgba(16, 24, 40, 0.05);
   border-radius: 11px;
-}
-.portfolio .portfolio-button::before {
-  content: "";
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 30px;
-  height: 30px;
-  -webkit-mask-image: url(/images/svg/portfolio.svg);
-          mask-image: url(/images/svg/portfolio.svg);
-  background-color: #F5FCFF;
 }
 
 .media {
@@ -699,7 +685,7 @@ body {
   flex: 0 0 auto;
 }
 .footer .menu-list__link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
