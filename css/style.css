@@ -593,9 +593,6 @@ body {
   transition-property: all;
   transition-duration: 0.7s;
 }
-.skill__item:hover {
-  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
-}
 .skill__item .skill-logo {
   display: block;
   margin: 0 auto;

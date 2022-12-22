@@ -621,10 +621,6 @@ body {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
     @include set_hover($time);
 
-    &:hover {
-      box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
-    }
-
     .skill-logo {
       display: block;
       margin: 0 auto;
