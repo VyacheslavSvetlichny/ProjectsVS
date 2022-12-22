@@ -319,4 +319,88 @@ body {
   font-size: 24px;
   line-height: 150%;
   color: #1C1E53;
+}
+
+.skill {
+  padding: 150px 0;
+  background: #F5FCFF;
+}
+.skill-heading__small {
+  margin-bottom: 10px;
+}
+.skill-heading__big {
+  margin-bottom: 105px;
+}
+.skill__heading {
+  margin-bottom: 20px;
+}
+.skill-hard {
+  overflow: hidden;
+}
+.skill .skill-hard-prev {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  top: 450px;
+  left: -65px;
+  background-color: #5E3BEE;
+  border-radius: 100%;
+}
+.skill .skill-hard-prev::after {
+  font-size: 32px;
+  color: white;
+}
+.skill .skill-hard-next {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  top: 450px;
+  right: -65px;
+  background-color: #5E3BEE;
+  border-radius: 100%;
+}
+.skill .skill-hard-next::after {
+  font-size: 32px;
+  color: white;
+}
+.skill__item {
+  height: unset;
+  padding: 32px;
+  background: #cae0eb;
+  border-radius: 11px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+.skill__item .skill-logo {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  margin-bottom: 32px;
+  padding: 10px;
+  border-radius: 11px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+.skill__item .skill__img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skill__item .skill__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #282938;
+}
+.skill__item .skill__description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1C1E53;
 }/*# sourceMappingURL=style.css.map */
