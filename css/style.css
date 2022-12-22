@@ -325,6 +325,50 @@ body {
 .skill-hard__content {
   margin-bottom: 20px;
 }
+.skill-soft {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.skill-soft__content {
+  margin-bottom: 20px;
+}
+.skill .skill-soft-prev {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  top: 915px;
+  left: -65px;
+  background-color: #5E3BEE;
+  border-radius: 15px;
+}
+.skill .skill-soft-prev::after {
+  font-size: 32px;
+  color: white;
+}
+.skill .skill-soft-next {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  top: 915px;
+  right: -65px;
+  background-color: #5E3BEE;
+  border-radius: 15px;
+}
+.skill .skill-soft-next::after {
+  font-size: 32px;
+  color: white;
+}
+.skill .skill-soft-pagination {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.skill .skill-soft-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background-color: #5E3BEE;
+}
 .skill .skill-hard-prev {
   position: absolute;
   height: 70px;
@@ -394,6 +438,9 @@ body {
   font-size: 32px;
   line-height: 100%;
   color: #282938;
+}
+.skill__item .skill-soft__name {
+  font-size: 21px;
 }
 .skill__item .skill__description {
   font-family: "Poppins", sans-serif;
