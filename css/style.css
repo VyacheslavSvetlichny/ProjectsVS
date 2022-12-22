@@ -176,22 +176,20 @@ body {
 }
 
 .title {
-  padding: 230px 0 320px;
+  padding: 230px 0;
   background: #F5FCFF;
 }
 .title-background__back {
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
-  top: -100px;
-  right: 0px;
-  width: 650px;
-  -webkit-animation-name: purple-ellipse;
-          animation-name: purple-ellipse;
-  -webkit-animation-duration: 180s;
-          animation-duration: 180s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  top: -30px;
+  right: 80px;
+  width: 550px;
+  height: 550px;
+  background-color: #cae0eb;
+  border-radius: 100px;
+  box-shadow: 12px 12px 13px 2px rgba(34, 60, 80, 0.2);
 }
 @-webkit-keyframes purple-ellipse {
   0% {
@@ -213,9 +211,44 @@ body {
   position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
-  top: -80px;
-  right: 40px;
-  width: 500px;
+  top: 50px;
+  right: 120px;
+  width: 320px;
+  border-radius: 80px;
+  border: 5px solid #5E3BEE;
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+}
+.title-background__name {
+  position: absolute;
+  top: 360px;
+  right: 100px;
+  padding: 20px 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: #FFFFFF;
+  background: #5E3BEE;
+  border-radius: 25px;
+  z-index: 3;
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+}
+.title-background__css {
+  position: absolute;
+  top: 0;
+  right: 105px;
+  width: 100px;
+  opacity: 10%;
+  transform: rotate(20deg);
+}
+.title-background__html {
+  position: absolute;
+  top: 5px;
+  right: 505px;
+  width: 90px;
+  opacity: 10%;
+  transform: rotate(-20deg);
 }
 .title-content {
   position: relative;
@@ -250,4 +283,40 @@ body {
   color: #FFFFFF;
   background: #5E3BEE;
   border-radius: 6px;
+}
+
+.about {
+  padding: 150px 0;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-content__left {
+  flex: 0 0 500px;
+}
+.about-content__left .about-background {
+  width: 500px;
+  height: 356px;
+}
+.about-content__right {
+  flex: 0 0 calc(100% - 500px);
+  width: calc(100% - 500px);
+  padding-left: 150px;
+}
+.about-content__right .about-heading__small {
+  margin-bottom: 10px;
+}
+.about-content__right .about-heading__big {
+  margin-bottom: 30px;
+}
+.about-content__right .about-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #1C1E53;
 }/*# sourceMappingURL=style.css.map */
