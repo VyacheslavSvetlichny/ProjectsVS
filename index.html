@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>My CV</title> 
   </head>
   <body>
@@ -97,10 +100,134 @@
           </div>
         </div>
       </section>
-      <section class="">
-
+      <section class="skill">
+        <div class="skill-container container">
+          <h3 class="skill-heading__small heading__small">
+            Навыки и умения
+          </h3>
+          <h2 class="skill-heading__big heading__big">
+            Что я умею?
+          </h2>
+          <div class="skill-hard swiper-container">
+            <div class="skill__heading heading__small">
+              Hard skills
+            </div>
+            <div class="skill-hard__content skill__content swiper-wrapper">
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/html.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  Html5
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Уверенные знания html5, которые могу применять на практике
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/css.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  CCS3
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Уверенные знания CCS3, которые могу применять на практике
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/js.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  JavaScript
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Начальные знания в JS. Сейчас активно занимаюсь изучением. Могу подключать и использовать скрипты.
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/sass.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  SASS
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Умение пользоваться предпроцессором SASS. Использую диалект SCSS
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/BEM.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  БЭМ
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Понимание методологии БЭМ и умение её применять на практике
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/pug.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  PUG
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Знаком с шаблонизатором и препроцессором HTML
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/gulp.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  GULP
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Частичное знание GULP на уровне понимания, что это и для чего
+                </div>
+              </div>
+              <div class="skill-hard__item skill__item swiper-slide">
+                <div class="skill-hard-logo skill-logo">
+                  <img src="images/etc.png" alt="" class="skill-hard__img skill__img">
+                </div>
+                <div class="skill-hard__name skill__name">
+                  Другое
+                </div>
+                <div class="skill-hard__description skill__description">
+                  Кроссбраузерная и адаптивная верстка. Умение пользоваться Figma и Photoshop на уровне уверенного пользователя. Знание bootstrap.
+                </div>
+              </div>
+            </div>
+            <div class="skill-hard-prev swiper-button-prev"></div>
+            <div class="skill-hard-next swiper-button-next"></div>
+          </div>
+          <!-- <div class="skill-soft">
+            <div class="skill__heading heading__small">
+              Soft skills
+            </div>
+            <div class="skill-soft__content skill__content">
+              <div class="skill-soft__item skill__item">
+                <div class="skill-soft-logo skill-logo">
+                  <img src="images/html.png" alt="" class="skill-soft__img skill__img">
+                </div>
+                <div class="skill-soft__name skill__name">
+                  Html5
+                </div>
+                <div class="skill-soft__description skill__description">
+                  Уверенные знания html5, которые могу применять на практике
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </section>
     </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
