@@ -218,6 +218,74 @@ body {
   z-index: 3;
   box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
 }
+.title .title-more__button {
+  position: absolute;
+  text-align: center;
+  top: 368px;
+  right: 470px;
+  width: 65px;
+  height: 65px;
+  background: #5E3BEE;
+  border-radius: 15px;
+}
+.title .title-more__icon {
+  padding-top: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.title .title-about {
+  position: absolute;
+  padding: 15px;
+  top: 450px;
+  right: 0px;
+  width: 600px;
+  background: white;
+  border-radius: 20px;
+  border: 5px solid #5E3BEE;
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  z-index: 2;
+  transform: scale(0);
+  transition: all ease 0.3s;
+}
+.title .title-about.active {
+  transform: scale(1);
+}
+.title .title-about__heading {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1C1E53;
+}
+.title .title-about__description {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.title .title-about__row {
+  display: flex;
+  flex: 0 0 100%;
+  margin-bottom: 10px;
+}
+.title .title-about__item {
+  flex: 0 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #1C1E53;
+}
+.title .title-about__dotted {
+  flex: 1 1 33.33%;
+  border-bottom: 3px dotted #5E3BEE;
+  opacity: 30%;
+}
 .title-background__css {
   position: absolute;
   top: 0;

@@ -211,6 +211,83 @@ body {
     box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
   }
 
+  .title-more__button {
+    position: absolute;
+    text-align: center;
+    top: 368px;
+    right: 470px;
+    width: 65px;
+    height: 65px;
+    background: #5E3BEE;
+    border-radius: 15px;
+  }
+
+  .title-more__icon {
+    padding-top: 15px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .title-about {
+    position: absolute;
+    padding: 15px;
+    top: 450px;
+    right: 0px;
+    width: 600px;
+    background: white;
+    border-radius: 20px;
+    border: 5px solid #5E3BEE;
+    box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+    z-index: 2;
+    @include set_transform(scale(0));
+    transition: all ease 0.3s;
+
+    &.active {
+      @include set_transform(scale(1));
+    }
+
+    &__heading {
+      margin-bottom: 25px;
+      text-align: center;
+      font-family: $FontFamily;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: $MainColorText;
+    }
+
+    &__description {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    &__row {
+      display: flex;
+      flex: 0 0 100%;
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      flex: 0 0 auto;
+      font-family: $FontFamily;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      color: $MainColorText;
+    }
+
+    &__dotted {
+      flex: 1 1 33.33%;
+      border-bottom: 3px dotted #5E3BEE;
+      opacity: 30%;
+    }
+  }
+
   &-background__css {
     position: absolute;
     top: 0;
@@ -269,6 +346,8 @@ body {
   }
 }
 
+// ABOUT
+
 .about {
   padding: 150px 0;
 
@@ -311,6 +390,8 @@ body {
     }
   }
 }
+
+// SKILL
 
 .skill {
   padding: 150px 0;
@@ -482,6 +563,8 @@ body {
   }
 }
 
+// Portfolio
+
 .portfolio {
   padding: 150px 0;
 
@@ -593,6 +676,8 @@ body {
   }
 }
 
+// Media
+
 .media {
   padding: 150px 0;
   background: #F5FCFF;
@@ -622,6 +707,8 @@ body {
     }
   }
 }
+
+// Footer
 
 .footer {
   padding: 70px 0;

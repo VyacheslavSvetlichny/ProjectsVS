@@ -83,3 +83,9 @@ new Swiper('.skill-soft',{
     //   }
 //   },
 });
+
+$(document).ready(function() {
+    $('.title-more__button').click(function(event) {
+      $('.title-about').toggleClass('active');
+    });
+  });
