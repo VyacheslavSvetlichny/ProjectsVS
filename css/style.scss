@@ -144,6 +144,11 @@ body {
           font-size: 18px;
           line-height: 27px;
           color: $MainColorText;
+          @include set_hover($time);
+
+          &:hover {
+            color: $SecondColorText;
+          }
         }
       }
     }
@@ -160,6 +165,12 @@ body {
         color: $SecondColorText;
         border: 2px solid #5E3BEE;
         border-radius: 10px;
+        @include set_hover($time);
+
+        &:hover {
+          color: $AdditionalColorText;
+          background: $SecondColorText;
+        }
       }
     }
   }

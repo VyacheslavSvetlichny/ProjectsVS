@@ -160,6 +160,11 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: #1C1E53;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.header-content__center .menu-list__link:hover {
+  color: #5E3BEE;
 }
 .header-content__right {
   flex: 0 0 auto;
@@ -174,6 +179,12 @@ body {
   color: #5E3BEE;
   border: 2px solid #5E3BEE;
   border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.header-content__right .header__button:hover {
+  color: #FFFFFF;
+  background: #5E3BEE;
 }
 
 .title {
