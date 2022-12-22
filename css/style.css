@@ -109,6 +109,9 @@ body {
 .up-button.active {
   opacity: 1;
 }
+.up-button.active:hover {
+  background: #1C1E53;
+}
 .up-button__icon {
   padding-top: 15px;
   font-family: "Font Awesome 5 Free";

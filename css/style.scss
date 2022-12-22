@@ -87,6 +87,10 @@ body {
 
   &.active {
     opacity: 1;
+
+    &:hover {
+      background: $MainColorText;
+    }
   }
 
   &__icon {
