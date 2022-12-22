@@ -107,6 +107,51 @@ body {
   overflow: hidden;
 }
 
+.back-button {
+  position: fixed;
+  top: 140px;
+  right: 250px;
+  padding: 10px 20px;
+  font-family: "Onest", "Sans-serif";
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  background: #5E3BEE;
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+.back-button:hover {
+  box-shadow: 8px 8px 15px -5px rgba(34, 60, 80, 0.6);
+  transform: scale(1.1);
+}
+@media (max-width: 1200px) {
+  .back-button {
+    top: 140px;
+    right: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .back-button {
+    top: 70px;
+    right: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .back-button {
+    top: 25px;
+    right: 260px;
+  }
+}
+@media (max-width: 576px) {
+  .back-button {
+    top: 105px;
+    right: 50px;
+  }
+}
+
 .modal-window {
   display: none;
   position: fixed;
