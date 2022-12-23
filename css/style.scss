@@ -1269,6 +1269,10 @@ body {
   @include _576() {
     padding: 100px 0;
   }
+
+  .portfolio-button {
+    font-size: 20px;
+  }
 }
 
 .portfolio__blue {

@@ -1178,6 +1178,9 @@ body {
     padding: 100px 0;
   }
 }
+.portfolio .portfolio-button {
+  font-size: 20px;
+}
 
 .portfolio__blue {
   background: #F5FCFF;
