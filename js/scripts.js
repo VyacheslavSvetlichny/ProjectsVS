@@ -13,32 +13,32 @@ new Swiper('.skill-hard',{
     slidesPerView: 4,
     spaceBetween: 20,
 
-    // breakpoints: {
-    //   0: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 12
-    //   },
-    //   580: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 25
-    //   },
-    //   677: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 12
-    //   },
-    //   769: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 12
-    //       },
-    //   993: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 12
-    //   },
-    //   1280: {
-    //     slidesPerView: 6,
-    //     spaceBetween: 12
-    //   }
-//   },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      580: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      677: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20
+          },
+      993: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+  },
 });
 
 new Swiper('.skill-soft',{
@@ -56,32 +56,32 @@ new Swiper('.skill-soft',{
     slidesPerView: 4,
     spaceBetween: 20,
 
-    // breakpoints: {
-    //   0: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 12
-    //   },
-    //   580: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 25
-    //   },
-    //   677: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 12
-    //   },
-    //   769: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 12
-    //       },
-    //   993: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 12
-    //   },
-    //   1280: {
-    //     slidesPerView: 6,
-    //     spaceBetween: 12
-    //   }
-//   },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      580: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      677: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20
+          },
+      993: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+  },
 });
 
 $(document).ready(function() {
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 var $page = $('html, body');
   $('a[href*="#"]').click(function() {
-  if($(this).attr('href')!="#"){
+  if($(this).attr('href')!="#" && $(this).attr('href')!="#open-modal"){
   $page.animate({
   scrollTop: $($.attr(this, 'href')).offset().top - 120}, 400);
   return false;
@@ -134,4 +134,17 @@ jQuery(document).on('click', '.modal-close', function () {
 jQuery(document).on('click', '.modal-shadow', function () {
   jQuery('.modal-all').fadeOut();
   jQuery('html').removeClass("no-scroll");
+});
+
+$(document).ready(function() {
+  $('.menu__burger,.mobile-menu__close,.mobile-menu__section').click(function(event) {
+    $('.menu__burger,.mobile-menu').toggleClass('active');
+    $('body').toggleClass('lock')
+  });
+  $('.mobile-menu__shadow').click(function (event) {
+		$('.mobile-menu').removeClass('active');
+    $('body').removeClass('lock');
+		$('.menu__burger').removeClass('active');
+	});
+
 });
