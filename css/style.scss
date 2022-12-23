@@ -520,6 +520,12 @@ body {
       display: none;
     }
   }
+
+  @include _768() {
+    .header-content {
+      min-height: 80px;
+    }
+  }
 }
 
 // Title
@@ -805,6 +811,8 @@ body {
   }
 
   @include _576() {
+      padding-bottom: 130px;
+
     .title-content {
       width: 100%;
     }
@@ -875,6 +883,8 @@ body {
   }
 
   @include _576() {
+    padding: 120px 0;
+
     .about-text {
       font-size: 18px;
     }
@@ -1130,6 +1140,10 @@ body {
       }
     }
   }
+
+  @include _576() {
+    padding-bottom: 90px;
+  }
 }
 
 // Portfolio
@@ -1259,6 +1273,10 @@ body {
       flex: 0 0 calc(100% - 40px);
     }
   }
+  
+  @include _576() {
+    padding: 100px 0;
+  }
 }
 
 .portfolio__blue {
@@ -1301,6 +1319,10 @@ body {
       width: 100%;
       height: 100%;
     }
+  }
+
+  @include _576() {
+    padding: 75px 0;
   }
 }
 
