@@ -72,6 +72,124 @@ body {
   color: $MainColorText;
 }
 
+.modal-window{
+	display: none;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10001;
+    display: none;
+    overflow: hidden;
+		overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+	.modal-shadow{
+		position: fixed;
+		z-index: 10000;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.modal-content{
+		position: absolute;
+		width: 100%;		
+		left: 50%;
+		top: 50%;
+		@include set_center_wh();
+		padding: 55px 60px 50px 60px;
+		background: #fff;
+		z-index: 10001;
+		box-shadow: 0 0 20px 3px #0000009e;
+		max-width: 490px;
+		max-height: 100%;
+    overflow-y: auto;
+    border-radius: 15px;
+		&::after{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display: block;
+			background: white;
+			background-size: contain;
+			content: "";
+			opacity: 0.02;
+			z-index: -1;
+		}
+	}
+	.modal-close{
+		display: block;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		height: 40px;
+		width: 40px;
+		cursor: pointer;
+		@include set_hover(.3s);
+		&::after{
+			position: absolute;
+		  content: "\f410";
+			font-family: 'Font Awesome 5 Free';
+      font-weight: 700;
+			left: 50%;
+			top: 50%;
+			@include set_center_wh();
+			font-size: 25px;
+			color: black;
+			@include set_hover(.3s);
+		}
+		&:hover{
+			&::after{
+				color: #E21E24;
+			}
+		}
+	}
+	.modal-title{
+    text-align: center;
+    font-family: $FontFamily;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 100%;
+		text-transform: uppercase;
+		color: $MainColorText;
+		margin: 0 0 50px;
+		&.small-margin{
+			margin-bottom: 30px;
+		}
+	}
+	.modal-text{
+    font-family: $FontFamily;
+		text-align: center;
+		font-size: 16px;		
+		color: #4c4c4c;
+		font-weight: 500;
+    margin-bottom: 10px;
+	}
+	@include _768(){
+		.modal-content{
+			position: absolute;
+			width: auto;
+			top: 0;
+			left: 0;
+			bottom: 0px;
+			right: 0;
+    		max-width: none;
+			@include set_transform(none);
+		}
+	}
+	@include _500(){		
+		.modal-content{
+			padding: 50px 15px 25px 15px;
+		}
+	}
+}
+
 .up-button {
   position: fixed;
   text-align: center;
@@ -775,6 +893,10 @@ body {
       background: darken(#E62872, 10%);
     }
   }
+}
+
+.portfolio__blue {
+  background: #F5FCFF;
 }
 
 // Media

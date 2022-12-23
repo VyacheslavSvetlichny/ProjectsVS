@@ -118,8 +118,8 @@ body {
 }
 
 .back-button {
-  position: relative;
   display: block;
+  position: relative;
   width: 300px;
   padding: 15px 0;
   text-align: center;

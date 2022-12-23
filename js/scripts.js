@@ -110,3 +110,28 @@ $(function () {
   }
   }); 
 });
+
+jQuery(document).on('click', 'a[href="#open-modal"]', function (e) {
+  e.preventDefault();
+  let idModal = $(this).attr('data-modal');
+  if( idModal.length > 0 ){
+      jQuery('html').addClass("no-scroll");
+      jQuery('.modal-window').fadeOut();
+      jQuery(idModal).fadeIn();
+  }
+});
+
+jQuery(document).on('click', '.close-button', function () {
+  jQuery('.modal-all').fadeOut();
+  jQuery('html').removeClass("no-scroll");
+});
+
+jQuery(document).on('click', '.modal-close', function () {
+  jQuery('.modal-all').fadeOut();
+  jQuery('html').removeClass("no-scroll");
+});
+
+jQuery(document).on('click', '.modal-shadow', function () {
+  jQuery('.modal-all').fadeOut();
+  jQuery('html').removeClass("no-scroll");
+});
