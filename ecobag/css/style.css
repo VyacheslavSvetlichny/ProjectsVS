@@ -1082,13 +1082,15 @@ body {
   background: #afafaf;
 }
 .catalog-slider {
+  position: relative;
+}
+.catalog-slider__content {
   overflow: hidden;
 }
 .catalog-prev {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 450px;
   left: -70px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
@@ -1105,7 +1107,6 @@ body {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 450px;
   right: -70px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
@@ -1268,9 +1269,13 @@ body {
   .catalog .catalog-goods__item {
     flex: 0 0 calc(50% - 16px);
   }
+  .catalog .catalog-products__item {
+    padding: 20px 50px;
+  }
   .catalog .catalog-prev {
-    top: 70%;
-    left: 0;
+    width: 50px;
+    height: 50px;
+    left: -15px;
     border: 1px solid rgb(119, 119, 119);
     background: #639E2D;
   }
@@ -1281,8 +1286,9 @@ body {
     color: #ffffff;
   }
   .catalog .catalog-next {
-    top: 70%;
-    right: 0;
+    width: 50px;
+    height: 50px;
+    right: -15px;
     border: 1px solid rgb(119, 119, 119);
     background: #639E2D;
   }
@@ -1294,7 +1300,7 @@ body {
   }
   .catalog .catalog-prev::after,
 .catalog .catalog-next::after {
-    font-size: 34px;
+    font-size: 28px;
     color: #FFFFFF;
   }
 }
@@ -1302,19 +1308,6 @@ body {
   .catalog .catalog-heading {
     font-size: 35px;
     line-height: 34px;
-  }
-  .catalog .catalog-prev {
-    width: 50px;
-    height: 50px;
-  }
-  .catalog .catalog-next {
-    width: 50px;
-    height: 50px;
-  }
-  .catalog .catalog-prev::after,
-.catalog .catalog-next::after {
-    font-size: 28px;
-    color: #FFFFFF;
   }
 }
 @media (max-width: 576px) {
@@ -1324,12 +1317,6 @@ body {
   }
   .catalog .catalog-goods__item {
     flex: 0 0 calc(100% - 16px);
-  }
-  .catalog .catalog-prev {
-    top: 75%;
-  }
-  .catalog .catalog-next {
-    top: 75%;
   }
 }
 
@@ -1377,13 +1364,15 @@ body {
   margin-top: 30px;
 }
 .clients-slider {
+  position: relative;
+}
+.clients-slider__content {
   overflow: hidden;
 }
 .clients-prev {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 170px;
   left: -70px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
@@ -1400,7 +1389,6 @@ body {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 170px;
   right: -70px;
   border: 1px solid #E6E6E6;
   border-radius: 100%;
@@ -1449,7 +1437,8 @@ body {
 }
 @media (max-width: 992px) {
   .clients .clients-prev {
-    top: 55%;
+    width: 50px;
+    height: 50px;
     left: 0;
     border: 1px solid rgb(119, 119, 119);
     background: #639E2D;
@@ -1461,7 +1450,8 @@ body {
     color: #ffffff;
   }
   .clients .clients-next {
-    top: 55%;
+    width: 50px;
+    height: 50px;
     right: 0;
     border: 1px solid rgb(119, 119, 119);
     background: #639E2D;
@@ -1474,7 +1464,7 @@ body {
   }
   .clients .clients-prev::after,
 .clients .clients-next::after {
-    font-size: 34px;
+    font-size: 28px;
     color: #FFFFFF;
   }
 }
@@ -1483,45 +1473,8 @@ body {
     font-size: 35px;
     line-height: 34px;
   }
-  .clients .clients-prev {
-    width: 50px;
-    height: 50px;
-  }
-  .clients .clients-next {
-    width: 50px;
-    height: 50px;
-  }
-  .clients .clients-prev::after,
-.clients .clients-next::after {
-    font-size: 28px;
-    color: #FFFFFF;
-  }
 }
 @media (max-width: 576px) {
-  .clients .clients-prev {
-    top: 60%;
-    left: 0;
-    border: 1px solid rgb(119, 119, 119);
-    background: #639E2D;
-  }
-  .clients .clients-prev:hover {
-    background: rgb(50, 85, 17);
-  }
-  .clients .clients-prev:hover::after {
-    color: #ffffff;
-  }
-  .clients .clients-next {
-    top: 60%;
-    right: 0;
-    border: 1px solid rgb(119, 119, 119);
-    background: #639E2D;
-  }
-  .clients .clients-next:hover {
-    background: rgb(50, 85, 17);
-  }
-  .clients .clients-next:hover::after {
-    color: #ffffff;
-  }
   .clients .clients-heading {
     font-size: 30px;
     line-height: 29px;

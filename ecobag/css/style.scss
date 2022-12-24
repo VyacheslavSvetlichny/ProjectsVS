@@ -1198,6 +1198,10 @@ body {
   }
 
   &-slider {
+    position: relative;
+  }
+
+  &-slider__content {
     overflow: hidden;
   }
 
@@ -1205,7 +1209,6 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 450px;
     left: -70px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
@@ -1224,7 +1227,6 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 450px;
     right: -70px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
@@ -1407,9 +1409,14 @@ body {
       flex: 0 0 calc(50% - 16px);
     }
 
+    .catalog-products__item {
+      padding: 20px 50px;
+    }
+
     .catalog-prev {
-      top: 70%;
-      left: 0;
+      width: 50px;
+      height: 50px;
+      left: -15px;
       border: 1px solid rgb(119, 119, 119);
       background: $AdditionalColorText;
 
@@ -1422,8 +1429,9 @@ body {
     }
 
     .catalog-next {
-      top: 70%;
-      right: 0;
+      width: 50px;
+      height: 50px;
+      right: -15px;
       border: 1px solid rgb(119, 119, 119);
       background: $AdditionalColorText;
 
@@ -1437,7 +1445,7 @@ body {
   
     .catalog-prev::after,
     .catalog-next::after {
-      font-size: 34px;
+      font-size: 28px;
       color: $SecondColorText;
     }
   }
@@ -1446,22 +1454,6 @@ body {
     .catalog-heading {
       font-size: 35px;
       line-height: 34px;
-    }
-
-    .catalog-prev {
-      width: 50px;
-      height: 50px;
-    }
-
-    .catalog-next {
-      width: 50px;
-      height: 50px;
-    }
-
-    .catalog-prev::after,
-    .catalog-next::after {
-      font-size: 28px;
-      color: $SecondColorText;
     }
   }
 
@@ -1473,14 +1465,6 @@ body {
 
     .catalog-goods__item {
       flex: 0 0 calc(100% - 16px);
-    }
-
-    .catalog-prev {
-      top: 75%;
-    }
-
-    .catalog-next {
-      top: 75%;
     }
   }
 }
@@ -1534,6 +1518,10 @@ body {
   }
 
   &-slider {
+    position: relative;
+  }
+
+  &-slider__content {
     overflow: hidden;
   }
 
@@ -1541,7 +1529,6 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 170px;
     left: -70px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
@@ -1559,7 +1546,6 @@ body {
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 170px;
     right: -70px;
     border: 1px solid #E6E6E6;
     border-radius: 100%;
@@ -1615,7 +1601,8 @@ body {
 
   @include _992() {
     .clients-prev {
-      top: 55%;
+      width: 50px;
+      height: 50px;
       left: 0;
       border: 1px solid rgb(119, 119, 119);
       background: $AdditionalColorText;
@@ -1629,7 +1616,8 @@ body {
     }
   
     .clients-next {
-      top: 55%;
+      width: 50px;
+      height: 50px;
       right: 0;
       border: 1px solid rgb(119, 119, 119);
       background: $AdditionalColorText;
@@ -1644,7 +1632,7 @@ body {
   
     .clients-prev::after,
     .clients-next::after {
-      font-size: 34px;
+      font-size: 28px;
       color: $SecondColorText;
     }
   }
@@ -1654,53 +1642,9 @@ body {
       font-size: 35px;
       line-height: 34px;
     }
-
-    .clients-prev {
-      width: 50px;
-      height: 50px;
-    }
-
-    .clients-next {
-      width: 50px;
-      height: 50px;
-    }
-
-    .clients-prev::after,
-    .clients-next::after {
-      font-size: 28px;
-      color: $SecondColorText;
-    }
   }
 
   @include _576() {
-    .clients-prev {
-      top: 60%;
-      left: 0;
-      border: 1px solid rgb(119, 119, 119);
-      background: $AdditionalColorText;
-
-      &:hover {
-        background: rgb(50, 85, 17);
-        &::after {
-          color: #ffffff;
-        }
-      }
-    }
-  
-    .clients-next {
-      top: 60%;
-      right: 0;
-      border: 1px solid rgb(119, 119, 119);
-      background: $AdditionalColorText;
-
-      &:hover {
-        background: rgb(50, 85, 17);
-        &::after {
-          color: #ffffff;
-        }
-      }
-    }
-
     .clients-heading {
       font-size: 30px;
       line-height: 29px;

@@ -3,7 +3,7 @@ var im = new Inputmask("+7 (999)-999-99-99");
 
 im.mask(selector);
 
-new Swiper('.catalog-slider',{
+new Swiper('.catalog-slider__content',{
 
     navigation: {
         nextEl: '.catalog-next',
@@ -24,11 +24,11 @@ new Swiper('.catalog-slider',{
           spaceBetween: 25
         },
         677: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 12
         },
         769: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 12
             },
         993: {
@@ -42,7 +42,7 @@ new Swiper('.catalog-slider',{
     },
 });
 
-new Swiper('.clients-slider',{
+new Swiper('.clients-slider__content',{
 
     navigation: {
         nextEl: '.clients-next',
@@ -63,11 +63,11 @@ new Swiper('.clients-slider',{
         spaceBetween: 25
       },
       677: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 12
       },
       769: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 12
           },
       993: {
